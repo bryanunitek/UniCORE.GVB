@@ -72,24 +72,126 @@ The repository will accumulate documentation between now and certification. Sour
 
 UniCORE.GVB provides the production-grade infrastructure that a Vertical Solution needs in order to run as a multi-tenant service across geographic regions, without each Vertical CORE having to re-derive the substrate from scratch.
 
-In scope:
+The scope is comprehensive. It covers every layer from hypervisor to application-services, governed by the 12-Level Governance Model throughout.
 
-- **Mail** — SMTP, IMAP, POP3, mailboxes, aliases, mailing lists, DKIM/SPF/DMARC, IP-reputation management
-- **File transfer** — secure file delivery, web upload, link sharing, retention policy
-- **DNS** — authoritative DNS servers, zone management, record sets
-- **FTP** — FTP accounts and share policy
-- **Tenancy** — tenant provisioning, quotas, cross-tenant boundary guards, attestation
-- **Topology** — node registry, IP pool management, inter-node federation, tenant-node pinning, warm-up state machine
-- **Federation** — SAML service provider, single sign-on across tenants
-- **CalDAV / CardDAV** — calendar and contact synchronisation for tenant users
-- **Outlook integration** — plug-in for "send via GVB" workflow
-- **Web disk** — webdisk-style cloud-storage shares
-- **Mail filtering** — server-side spam, virus, content rules
-- **Auto-config** — automatic client configuration delivery
-- **Reporting** — bandwidth and storage metrics
-- **Node operations** — server profiles, jurisdictional posture, update preferences, runtime tweaks
+### Compute and virtualisation
 
-UniCORE.GVB is the substrate-services layer. It does not carry industry-specific Business Objects; those live in each Vertical CORE.
+- **Hypervisor management** — virtual machine lifecycle (create, start, stop, snapshot, clone, live-migrate), resource pools, storage repositories, high-availability clustering, rolling updates
+- **VM templates and provisioning** — template library, rapid deployment, cloud-init / unattended configuration, resource allocation policies
+- **Host management** — physical host inventory, firmware/BIOS configuration, hardware health monitoring, power management, maintenance mode
+- **Storage** — local and shared storage backends, thin provisioning, snapshot management, replication, tiered storage policies
+- **Networking (virtual)** — virtual switches, VLANs, SDN integration, network isolation per tenant, bonding, SR-IOV passthrough
+
+### Multi-tenant platform management
+
+- **Tenancy** — tenant provisioning, suspension, termination; cross-tenant boundary guards; governance attestation per tenant
+- **Resource quotas and packages** — disk, bandwidth, mailbox, database, and compute quotas; resource packages; overage policies
+- **Account lifecycle** — customer-account creation, modification, suspension, transfer between nodes; account-level audit trail
+- **Reseller and delegation** — reseller account hierarchy, delegated administration, white-label capability, per-reseller resource limits
+- **Billing integration** — usage metering, invoice-period snapshots, integration points for external billing systems
+
+### Mail services
+
+- **SMTP** — outbound and inbound mail transfer, queue management, rate limiting, IP-reputation management, warm-up state machine
+- **IMAP and POP3** — mailbox access protocols, folder management, shared mailboxes
+- **Mailboxes, aliases, and forwarders** — per-tenant mailbox provisioning, alias routing, auto-responders, catch-all configuration
+- **Mailing lists** — list creation, subscription management, moderation, archiving
+- **DKIM / SPF / DMARC** — DNS-based email authentication, key rotation, policy enforcement, aggregate and forensic reporting
+- **Spam and greylisting** — server-side spam filtering, greylisting policies, per-tenant thresholds, quarantine management
+- **Sieve filtering** — server-side mail rules, per-user and per-tenant filter scripts
+- **Webmail** — browser-based mail client, address book, calendar integration
+- **Outlook integration** — plug-in for "send via GVB" workflow, profile auto-configuration
+- **Auto-config / Autodiscover** — automatic mail-client configuration delivery (Thunderbird autoconfig, Outlook autodiscover, Apple config profiles)
+
+### File transfer and secure delivery
+
+- **Secure file delivery** — encrypted file transfer with governance attestation, expiry policies, download tracking, audit trail
+- **Filedrop pages** — branded upload portals for external parties, per-drop access control
+- **FileLinks** — shareable download links with expiry, password protection, download limits, revocation
+- **File requests** — single-use upload tickets for inbound document collection
+- **Emaildrop** — email-to-filedrop processor, attachment extraction, policy-based routing
+- **Upload scanning** — antivirus, malware detection, file-type validation, content inspection policies
+- **File-transfer policy** — retention periods, maximum file sizes, allowed file types, geographic restrictions
+- **Rate limiting and brute-force protection** — per-account and per-IP throttling, lockout policies, CAPTCHA integration
+
+### DNS
+
+- **Authoritative DNS** — zone management, record sets (A, AAAA, CNAME, MX, TXT, SRV, CAA, TLSA), DNSSEC signing
+- **DNS clustering** — multi-node DNS synchronisation, zone transfer, split-horizon
+- **Reverse DNS** — PTR record management for IP pools, delegation
+
+### FTP and file access
+
+- **FTP / SFTP** — FTP account provisioning, SFTP-only enforcement, chroot jails, bandwidth limits
+- **Web disk** — WebDAV-based cloud-storage shares, per-user and per-tenant quotas, client auto-mount
+
+### Calendar and contacts
+
+- **CalDAV** — calendar server, shared calendars, free/busy lookup, scheduling, delegation
+- **CardDAV** — contact server, shared address books, vCard import/export
+
+### Web hosting and application services
+
+- **Web server management** — virtual host configuration, TLS termination, HTTP/2 and HTTP/3, reverse proxy, load balancing
+- **PHP / runtime management** — per-tenant PHP version selection, handler configuration, resource limits, extension management
+- **Database management** — database provisioning (PostgreSQL, MySQL/MariaDB), per-tenant isolation, user management, remote access control, backup scheduling
+- **Application deployment** — one-click application installers, staging environments, deployment pipelines
+- **Cron / scheduled tasks** — per-tenant scheduled job management, execution logging, failure alerting
+
+### Security and certificates
+
+- **TLS certificate management** — certificate provisioning (ACME / Let’s Encrypt), renewal automation, CSR generation, private key storage, certificate deployment across services
+- **Certificate authority integration** — internal CA for node-to-node trust, client certificate issuance, CRL/OCSP
+- **Firewall and access control** — per-node and per-tenant firewall rules, IP blocking, country-level geo-blocking, port management
+- **Intrusion detection** — brute-force detection, fail2ban-equivalent policies, real-time alerting
+- **SSH access management** — key management, per-tenant shell access policies, session logging
+- **Two-factor authentication** — TOTP-based 2FA for administrative and tenant access, recovery codes, hardware-key support
+
+### Backup and disaster recovery
+
+- **Backup policy** — full and incremental backups, per-tenant backup schedules, retention policies, off-site replication
+- **Restore** — full-account restore, per-service restore (mail only, files only, databases only), point-in-time recovery
+- **Disaster recovery** — cross-node failover, backup verification, recovery-time objectives per tenant tier
+
+### Monitoring, reporting, and observability
+
+- **Bandwidth reporting** — per-tenant, per-service, per-node bandwidth metrics; historical trends; overage alerting
+- **Storage reporting** — disk usage per tenant, per service, per mailbox; growth projections; quota-approach warnings
+- **Service health** — per-service uptime monitoring, latency metrics, error-rate tracking
+- **Audit trail** — administrative action logging, tenant-action logging, immutable audit records, compliance export
+- **Log management** — centralised log aggregation, per-tenant log isolation, retention policies, search
+
+### Topology and multi-node operations
+
+- **Node registry** — node identity, geographic location, jurisdiction, capability declaration
+- **IP pool management** — /24 block allocation, per-tenant IP assignment, reputation segregation, warm-up scheduling
+- **Inter-node federation** — the Global Virtual Bridge itself: cross-node mail routing, file delivery, DNS synchronisation, tenant migration
+- **Tenant-node pinning** — data-residency enforcement, jurisdictional pinning, failover preferences
+- **Live migration** — tenant migration between nodes (planned maintenance, jurisdiction change, capacity rebalancing)
+
+### Node operations and administration
+
+- **Server profiles** — per-node configuration profiles, role assignment, capability flags
+- **Jurisdictional posture** — per-node data-sovereignty rules, cross-border transfer policies, regulatory compliance flags
+- **Update preferences** — per-node update scheduling, maintenance windows, rollback policies
+- **Runtime tweaks** — per-node performance tuning, service-specific configuration overrides
+- **Software management** — package installation, version pinning, security patching, EOL tracking
+
+### Federation and identity
+
+- **SAML 2.0 SSO** — service-provider implementation, external IdP integration, attribute mapping, session management
+- **External authentication** — LDAP/AD integration, OAuth2 federation, SCIM provisioning
+- **External user identity model** — partner/counterparty/counsel identity, cross-tenant identity federation, guest access
+
+### Industry classification and governance
+
+- **12-Level Governance parameterisation** — per-industry governance profiles, level-specific policy enforcement, compliance attestation
+- **Industry-isolated networks** — network-level isolation between industry classifications on shared infrastructure
+- **Classification tiers** — industry-specific resource tiers, SLA differentiation, regulatory-requirement mapping
+
+---
+
+UniCORE.GVB is the substrate-services layer. It does not carry industry-specific Business Objects; those live in each Vertical CORE. The scope above is the full substrate — from hypervisor to application-services, governed throughout.
 
 ---
 
