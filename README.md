@@ -294,5 +294,5 @@ UniCORE.GVB is the substrate-services layer of governed AI. It is not a product,
 
 ## Contact
 
-- **Public discussion:** [GitHub Discussions](https://github.com/bryanunitek/UniCORE.GVB/discussions)
+- **Public discussion:** [GitHub Discussions](https://github.com/bryanunitek/UniCORE.GVB/discussions) (see [DISCUSSIONS.md](DISCUSSIONS.md))
 - **Private contact / connection request:** [LinkedIn](https://www.linkedin.com/in/bryan-fred-02209753/)
