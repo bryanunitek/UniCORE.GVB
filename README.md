@@ -195,6 +195,35 @@ UniCORE.GVB is the substrate-services layer. It does not carry industry-specific
 
 ---
 
+## UniCORE.Desktop — client applications
+
+UniCORE.Desktop provides the desktop client applications for the UniCORE family. These applications connect to services running on UniCORE.GVB and/or UniCORE. They are not products for sale — they are included with the UniCORE.GVB licence (CC BY 4.0), part of the same gift.
+
+UniCORE.Desktop must independently pass the "Powered by UniCORE AI / built on TrueAI Foundation" certification gate.
+
+Client applications (scope — the full list of desktop-side counterparts to the substrate-services above):
+
+- **File transfer client** — secure file send/receive, filedrop upload, filelink management, download tracking
+- **FTP / SFTP client** — file access to GVB-hosted storage, bookmark management, transfer queue
+- **Mail configuration** — auto-configuration of desktop mail clients against GVB mail services
+- **Calendar and contacts sync** — CalDAV/CardDAV client integration, offline sync, conflict resolution
+- **Office integration** — document workflows connecting desktop productivity suites to GVB services
+- **AI Chat** — governed AI assistant operating under TrueAI governance, connected to UniCORE AI services
+- **Identity and authentication** — desktop-side identity provider, certificate-based authentication, 2FA integration
+- **GVB API client** — typed HTTP client for the UniCORE.GVB substrate API, used by all other desktop applications
+- **VPN / tunnel client** — secure connectivity to GVB nodes, jurisdictional routing
+- **Backup client** — desktop-side backup agent connecting to GVB backup services
+- **Admin console** — desktop administration interface for node operators and tenant administrators
+- **VM management client** — desktop interface for hypervisor operations (VM lifecycle, snapshots, migration)
+- **DNS management client** — zone and record management interface
+- **Monitoring dashboard** — desktop-side observability client (bandwidth, storage, service health)
+
+UniCORE.Desktop is documented in both this repository and [`bryanunitek/UniCORE`](https://github.com/bryanunitek/UniCORE) because the applications serve both layers. At certification, UniCORE.Desktop publishes as its own repository (`bryanunitek/UniCORE.Desktop`) with cross-references from both.
+
+The working repository is `bryanunitek/UniCORE.Desktop-Claw` (private until certification).
+
+---
+
 ## UniCORE Positioning Principle
 
 The programme is positioned as **Harmony, Peace, Space Exploration, for Humanity**.
