@@ -228,9 +228,11 @@ The working repository is `bryanunitek/UniCORE.Desktop-Claw` (private until cert
 
 The programme is positioned as **Harmony, Peace, Space Exploration, for Humanity**.
 
-Industries that align with this positioning are welcome targets for UniCORE.GVB classifications. Industries that do not are not. **Military uses are intentionally absent** from the industry list and will not be added.
+Industries and uses that align with this positioning are welcome. Those that do not are not. **Military uses are intentionally absent** from the programme and will not be added.
 
-This is a structural choice, not a marketing choice. The programme exists to keep critical decision systems available to humanity as gift; turning the same substrate into a weapons-class delivery infrastructure would invert the gift principle. The positioning closes that route.
+**The "Powered by UniCORE AI" and "built on TrueAI Foundation" certifications must not appear on any military use.** The badge is part of the gift, and the gift is meant for Harmony, Peace, Space Exploration, for Humanity — using the badge to brand weapons-class systems would invert the gift principle. The positioning closes that route.
+
+This is a structural choice, not a marketing choice. The programme exists to keep critical decision systems available to humanity as gift.
 
 ---
 
