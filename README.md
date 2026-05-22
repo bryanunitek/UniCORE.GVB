@@ -59,6 +59,7 @@ This repository exists today as the **canonical public home** for UniCORE.GVB �
 What is published here today:
 
 - **The licence** — CC BY 4.0, irrevocable, the same terms as the rest of the programme. See [LICENSE.md](LICENSE.md).
+- **The licensing reference with worked scenarios** — plain-English guidance for Partners, Clients, and Software Providers, with worked examples per industry. See [LICENSE_EXAMPLES.md](LICENSE_EXAMPLES.md).
 - **The naming and claims rules** — what can and cannot be claimed about the UniCORE.GVB name. See [STATEMENT-ON-CLAIMS.md](STATEMENT-ON-CLAIMS.md).
 - **The roadmap** — what arrives at certification and in what shape. See [ROADMAP.md](ROADMAP.md).
 - **The AI authorship disclosure** — same disclosure form as the Foundation triad. See [AI-AUTHORSHIP.md](AI-AUTHORSHIP.md).
