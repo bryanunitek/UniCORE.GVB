@@ -2,7 +2,6 @@
 
 **Status:** Public. Cross-reference. CC BY 4.0 surface; certification mark governance separate.
 **First published:** 2026-05-21
-**Version:** 1.0 (DRAFT v0.01)
 
 ---
 

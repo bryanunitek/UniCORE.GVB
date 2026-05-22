@@ -23,7 +23,6 @@ A 30-year programme from apprentice to certified producer. A public foundation g
 Author: Bryan Fred, Unitek Systems Limited, Bedford, United Kingdom
 First published: May 2026
 Status: Public. Given, not sold. Irrevocable.
-Version: 1.0 (DRAFT v0.01 — source code at certification, see ROADMAP.md)
 
 ---
 

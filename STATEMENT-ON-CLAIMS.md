@@ -3,7 +3,6 @@
 Author: Bryan Fred, Unitek Systems Limited, Bedford, United Kingdom
 Status: Public. Given, not sold. Irrevocable.
 First published: May 2026
-Version: 1.0 (DRAFT v0.01)
 
 ---
 
