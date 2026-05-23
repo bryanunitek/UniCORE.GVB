@@ -14,6 +14,8 @@ A 30-year programme from apprentice to certified producer. A public foundation g
 
 *This is **UniCORE.GVB**, the substrate-services layer of UniCORE. The Global Virtual Bridge — the production-grade substrate-services that any Vertical Solution may run on. Sister repositories: [UniVERSE](https://github.com/bryanunitek/UniVERSE) (the programme), [TrueAI](https://github.com/bryanunitek/TrueAI) (the immutable Foundation), [UniCORE-AI](https://github.com/bryanunitek/UniCORE-AI) (the 12-level reference architecture), [UniCORE](https://github.com/bryanunitek/UniCORE) (the implementation reference).*
 
+*New to producing on the public gift surface? Start with [UniVERSE/GETTING_STARTED.md](https://github.com/bryanunitek/UniVERSE/blob/main/GETTING_STARTED.md).*
+
 ---
 
 # UniCORE.GVB — Global Virtual Bridge
