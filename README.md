@@ -140,6 +140,13 @@ The scope is comprehensive. It covers every layer from hypervisor to application
 - **Application deployment** — one-click application installers, staging environments, deployment pipelines
 - **Cron / scheduled tasks** — per-tenant scheduled job management, execution logging, failure alerting
 
+### Site builder and content
+
+- **Native site builder (UniCORE.GVB.SiteBuilder)** — native site-builder engine; per-tenant site provisioning; content store; page tree; assets; pages and blocks; publish pipeline; multi-locale; status lifecycle (draft / staged / published)
+- **Plugins and themes** — plugin registry, theme registry, plugin/theme descriptors, plugin kinds, install/upgrade lifecycle, governance attestation per plugin
+- **Editor surface** — page-tree management, block-level edits, asset upload, page preview, scheduled publish, publish-history tracking
+- **Two-substrate parity** — native site-builder is the Windows-substrate-side counterpart to embedded third-party site-builder integration on the Linux substrate; control surface (Cross-Platform API; governance journal) is invariant across the two
+
 ### Security and certificates
 
 - **TLS certificate management** — certificate provisioning (ACME / Let’s Encrypt), renewal automation, CSR generation, private key storage, certificate deployment across services
@@ -194,6 +201,8 @@ The scope is comprehensive. It covers every layer from hypervisor to application
 ---
 
 UniCORE.GVB is the substrate-services layer. It does not carry industry-specific Business Objects; those live in each Vertical CORE. The scope above is the full substrate — from hypervisor to application-services, governed throughout.
+
+**Two-substrate parity at the customer-account-and-content layer.** UniCORE.GVB ships as one codebase that runs on either a Linux substrate or a Windows substrate. The two branches are co-equal at the control-surface layer (same governance, same Cross-Platform API surface, same evidence trail, same attestation shape). They differ at the third-party-integration layer: the Linux branch embeds established open / industry-standard reference products at the customer-account-and-content layer; the Windows branch combines third-party reference products at the hosting-account layer with a **native UniCORE.GVB.SiteBuilder** at the site-and-content layer. SiteBuilder is the first substrate-services component met by Unitek-original code rather than by wrapping a reference product. The scope above is invariant across both substrates.
 
 ---
 
