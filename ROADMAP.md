@@ -68,7 +68,7 @@ Adding a classification creates a new `UniCORE.GVB.<Industry>` repository at cer
 When UniCORE.GVB is certified, this repository receives:
 
 ### Source code (industry-agnostic)
-- The substrate-services source code extracted from `UniCORE.GVB-Claw` — the industry-agnostic layer.
+- The substrate-services source code extracted from `UniCORE.GVB-Claw` — the industry-agnostic layer. This includes the native **UniCORE.GVB.SiteBuilder** site-and-content engine, the plugin and theme registries, and the editor surface, all on the same multi-provider persistence and Cross-Platform API surface as the rest of the substrate-services. The substrate is one codebase that runs on either a Linux substrate or a Windows substrate; the two are co-equal at the control-surface layer (same governance, same Cross-Platform API, same evidence trail, same attestation shape).
 - The build files (`.sln`, `.csproj`, `Directory.Packages.props`, `Directory.Build.props`) that compile the substrate.
 - Tests for the substrate.
 
@@ -139,6 +139,28 @@ For the canonical horizon statement, see [`UniVERSE/HORIZON.md`](https://github.
 - **Read the canonical material** — the Foundation triad ([UniVERSE](https://github.com/bryanunitek/UniVERSE), [TrueAI](https://github.com/bryanunitek/TrueAI), [UniCORE-AI](https://github.com/bryanunitek/UniCORE-AI)) is fully published.
 - **Build their own substrate-services** under CC BY 4.0 — the architecture is open. Independent producers building Foundation-aligned substrate-services for verticals not yet covered by the official industry list are exactly what the gift principle exists to enable.
 - **Discuss** — open a thread on this repository's [Discussions tab](https://github.com/bryanunitek/UniCORE.GVB/discussions) when adoption, architectural critique, industry-classification proposals, or translation work has begun.
+
+---
+
+## Substrate scope evolution since v0.01 publication
+
+The substrate-services scope recorded in [README.md](README.md) is the **current architectural surface**, not a frozen v0.01 snapshot. The scope has expanded since the first publication of this ROADMAP, and the public statement here records the shape of that evolution so that readers citing the architecture can see what has moved and what has not.
+
+**What has been added since v0.01 publication:**
+
+- **Native site builder (UniCORE.GVB.SiteBuilder).** A native site-and-content engine has been added to the substrate-services scope. It is the first substrate-services component met by Unitek-original code rather than by wrapping an established open / industry-standard reference product. It carries the same governance, Cross-Platform API, evidence-trail, and attestation shape as the rest of the substrate-services. See README.md §"Site builder and content" for the full capability list.
+- **Two-substrate (Linux / Windows) parity at the customer-account-and-content layer.** UniCORE.GVB now ships as one codebase that runs on either a Linux substrate or a Windows substrate. The two branches are co-equal at the control-surface layer; they differ only at the third-party-integration layer (the Linux branch embeds reference products at the customer-account-and-content layer; the Windows branch combines third-party reference products at the hosting-account layer with the native UniCORE.GVB.SiteBuilder at the site-and-content layer). The substrate-services scope is invariant across both substrates. See README.md §"Two-substrate parity at the customer-account-and-content layer" for the public statement of the parity shape.
+- **Multi-provider persistence at the substrate-services layer.** The substrate-services data stores are now provider-agnostic at compile time, with the runtime backend selected per deployment. The default backend is PostgreSQL.
+
+**What has not changed:**
+
+- The certification trigger condition (above) is unchanged. Source code arrives at certification; the badge ("Powered by UniCORE AI / built on the TrueAI Foundation") remains the gate.
+- The industry-classification list (above) is unchanged. The list remains open; the Positioning Principle remains Harmony, Peace, Space Exploration, for Humanity; military remains intentionally absent.
+- The CC BY 4.0 licence terms are unchanged and remain irrevocable.
+- The substrate-services-only / Vertical-CORE-elsewhere boundary is unchanged. Industry-specific Business Objects continue to live in each Vertical CORE; UniCORE.GVB carries the substrate-services layer only.
+- The Unitek-Systems-USA-Inc-as-one-consumer-of-the-gift posture is unchanged.
+
+**Why this sub-section exists.** The substrate-services scope is a public artefact that readers cite when they reason about UniCORE.GVB's architectural position. Recording how the scope has moved between v0.01 and certification, in a public-statement form, lets a reader who cited v0.01 see what has been added without having to diff the README themselves. The discipline is part of the gift principle: keep the architectural surface visible to the people who depend on it.
 
 ---
 
