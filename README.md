@@ -204,6 +204,8 @@ UniCORE.GVB is the substrate-services layer. It does not carry industry-specific
 
 **Two-substrate parity at the customer-account-and-content layer.** UniCORE.GVB ships as one codebase that runs on either a Linux substrate or a Windows substrate. The two branches are co-equal at the control-surface layer (same governance, same Cross-Platform API surface, same evidence trail, same attestation shape). They differ at the third-party-integration layer: the Linux branch embeds established open / industry-standard reference products at the customer-account-and-content layer; the Windows branch combines third-party reference products at the hosting-account layer with a **native UniCORE.GVB.SiteBuilder** at the site-and-content layer. SiteBuilder is the first substrate-services component met by Unitek-original code rather than by wrapping a reference product. The scope above is invariant across both substrates.
 
+**NVarchar Data Mode (Scrambled / Open / Encrypted).** All NVARCHAR (string) data across the substrate is governed by a three-mode architecture. Default posture: **Scrambled** — all string fields arrive Scrambled unless explicitly resolved otherwise by a policy chain (Workload → Tenant → Product → Default). Open mode is used where scrambling is operationally inappropriate (e.g. full-text search indexes). Encrypted mode is reserved (future feature; customer holds the decryption key per sovereignty principle). The enum, resolver, and policy store live at `UniCORE.GVB.Common` so that every Vertical CORE inherits the data-mode posture without re-implementing it.
+
 ---
 
 ## UniCORE.Desktop — client applications
