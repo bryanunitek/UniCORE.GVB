@@ -235,6 +235,24 @@ The working repository is `bryanunitek/UniCORE.Desktop-Claw` (private until cert
 
 ---
 
+## UniVIEW and UniREPORT — view and reporting applications
+
+UniVIEW and UniREPORT follow the same pattern as UniCORE.Desktop. They are application surfaces that serve both UniCORE.GVB and UniCORE:
+
+- **UniVIEW** — view-layer applications, presenting governed data from the substrate-services and Vertical CORE layers. Read-mode user surface; no business-logic mutation.
+- **UniREPORT** — reporting-layer applications, generating governed reports across the same data. Evidence-bound output suitable for regulated reporting contexts.
+
+Like UniCORE.Desktop, both:
+
+- Are not products for sale — they are included with the UniCORE.GVB licence (CC BY 4.0), part of the same gift.
+- Must independently pass the "Powered by UniCORE AI / built on TrueAI Foundation" certification gate.
+- Are documented in both `bryanunitek/UniCORE.GVB` and `bryanunitek/UniCORE` because they serve both layers.
+- Publish as their own repositories at certification (`bryanunitek/UniVIEW`, `bryanunitek/UniREPORT`) with cross-references from both.
+
+The working repositories are `bryanunitek/UniVIEW-Claw` and `bryanunitek/UniREPORT-Claw` (private until certification).
+
+---
+
 ## UniCORE Positioning Principle
 
 The programme is positioned as **Harmony, Peace, Space Exploration, for Humanity**.
