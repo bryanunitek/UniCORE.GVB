@@ -275,6 +275,10 @@ This is a structural choice, not a marketing choice. The programme exists to kee
 **The implementation layer:**
 - [`UniCORE`](https://github.com/bryanunitek/UniCORE) — The implementation reference. Sister to this repository. Same certification gate. Same gift principle.
 
+**The SaaS-deployment-shape sisters:**
+- [`UniSaaS.UniCORE`](https://github.com/bryanunitek/UniSaaS.UniCORE) — The SaaS-deployment-shape sister of UniCORE. Same governance, multi-tenant topology. CC BY 4.0 gift surface.
+- [`UniSaaS.UniCORE.GVB`](https://github.com/bryanunitek/UniSaaS.UniCORE.GVB) — The SaaS-deployment-shape sister of this repository. Substrate-services layer for the SaaS topology. CC BY 4.0 gift surface.
+
 **The Vertical CORE family (working repositories — private until certification):**
 - `bryanunitek/UniCORE.Law-Claw` — First Vertical CORE, Law sector.
 - Future Vertical COREs as additional industries are produced.
