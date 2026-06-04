@@ -208,6 +208,30 @@ UniCORE.GVB is the substrate-services layer. It does not carry industry-specific
 
 ---
 
+## Platforms and UI Surfaces
+
+UniCORE.GVB runs on **Windows, Linux, macOS, iOS, and Android**.
+
+Three primary UI surfaces deliver the full platform reach:
+
+| Surface | Technology | Platforms | Role |
+|---|---|---|---|
+| **DevExpress Blazor Server** | .NET 10 + XAF + XPO | Windows, Linux, macOS (via browser) | Primary web UI — the main operational surface |
+| **.NET MAUI** | .NET 10 | Windows, macOS, iOS, Android | Native mobile + desktop |
+| **Avalonia** | .NET 10 | Windows, Linux, macOS | Cross-platform native desktop |
+
+Additional optional surface:
+
+| Surface | Technology | Platforms | Role |
+|---|---|---|---|
+| **WinForms (*.Win)** | .NET 10 + DevExpress | Windows only | Optional power-user desktop surface (ships alongside Blazor) |
+
+The Blazor Server surface is the governance-primary UI — all administrative, operational, and substrate-services workflows are available through it. MAUI and Avalonia extend reach to native mobile and native Linux desktop respectively. WinForms remains as an optional Windows-only surface for power users who prefer a native Windows experience alongside Blazor.
+
+All four surfaces share the same substrate-services layer, the same 12-Level Governance Model, and the same Foundation invariants. The UI surface is a delivery choice; governance is invariant across all of them.
+
+---
+
 ## UniCORE.Desktop — client applications
 
 UniCORE.Desktop provides the desktop client applications for the UniCORE family. These applications connect to services running on UniCORE.GVB and/or UniCORE. They are not products for sale — they are included with the UniCORE.GVB licence (CC BY 4.0), part of the same gift.
