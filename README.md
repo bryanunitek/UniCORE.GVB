@@ -312,6 +312,18 @@ This is a structural choice, not a marketing choice. The programme exists to kee
 **The substrate-services working repository (private until certification):**
 - `bryanunitek/UniCORE.GVB-Claw` — Working repository for this layer. The contents become public on certification, distributed across this repository and the industry-classified siblings.
 
+
+
+**Forked-upstream building-block families (scaffold-anchor as of 2026-06-04 — full scaffolding and upstream fork pending dedicated kickoff arcs):**
+- [`UniCORE.Avalonia`](https://github.com/bryanunitek/UniCORE.Avalonia) — Cross-platform .NET UI substrate. Fork of MIT Avalonia + UniCORE CC BY 4.0 additions (Pro-equivalent controls + Avalonia XPF).
+- [`UniSaaS.UniCORE.Avalonia`](https://github.com/bryanunitek/UniSaaS.UniCORE.Avalonia) — SaaS-deployment-shape sister of UniCORE.Avalonia.
+- `bryanunitek/UniCORE.Avalonia-Claw` (private) — on-prem-shape working repository for UniCORE.Avalonia.
+- `bryanunitek/UniSaaS.UniCORE.Avalonia-Claw` (private) — SaaS-shape working repository.
+- [`UniCORE.DNN`](https://github.com/bryanunitek/UniCORE.DNN) — Web CMS / portal building block. Fork of MIT Dnn.Platform + UniCORE CC BY 4.0 modules.
+- [`UniSaaS.UniCORE.DNN`](https://github.com/bryanunitek/UniSaaS.UniCORE.DNN) — SaaS-deployment-shape sister of UniCORE.DNN.
+- `bryanunitek/UniCORE.DNN-Claw` (private) — on-prem-shape working repository for UniCORE.DNN.
+- `bryanunitek/UniSaaS.UniCORE.DNN-Claw` (private) — SaaS-shape working repository.
+
 ---
 
 ## Attribution
