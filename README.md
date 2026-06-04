@@ -314,6 +314,10 @@ This is a structural choice, not a marketing choice. The programme exists to kee
 
 
 
+**Substrate-harness working repositories (private, sister to this layer):**
+- `bryanunitek/UniCORE-Claw` — substrate-harness working repository, on-prem-shape. The reference Vertical CORE pattern.
+- `bryanunitek/UniSaaS.UniCORE-Claw` — substrate-harness working repository, SaaS-shape.
+
 **Forked-upstream building-block families (scaffold-anchor as of 2026-06-04 — full scaffolding and upstream fork pending dedicated kickoff arcs):**
 - [`UniCORE.Avalonia`](https://github.com/bryanunitek/UniCORE.Avalonia) — Cross-platform .NET UI substrate. Fork of MIT Avalonia + UniCORE CC BY 4.0 additions (Pro-equivalent controls + Avalonia XPF).
 - [`UniSaaS.UniCORE.Avalonia`](https://github.com/bryanunitek/UniSaaS.UniCORE.Avalonia) — SaaS-deployment-shape sister of UniCORE.Avalonia.
