@@ -23,13 +23,15 @@ Truth without consistency is not deployable in regulated institutional settings.
 
 ## 1. The failure mode
 
-Today's frontier AIs are structurally inconsistent. This is not a defect of any one vendor; it is a property of how probabilistic language models are deployed at the consumer surface.
+Today's frontier AIs are structurally inconsistent. This is not a defect of any one vendor; it is a property of how probabilistic language models are deployed at the consumer surface, and — critically — **it is by design**. Variability, creativity, conversational warmth, and personalisation are *features* for the consumer audience, not bugs.
 
 - **Different vendors disagree.** Same question, four AIs, four materially different answers.
 - **The same vendor disagrees with itself across sessions.** Same prompt, same model, two sessions, two answers.
 - **The same session drifts.** Long contexts and multi-turn pressure produce documented drift.
 
-Consumer AI is permitted to live with this. Institutional AI is not. Inconsistency at the application layer becomes inconsistency at the data layer the moment a regulated decision is recorded — and the substrate-services layer is where the data layer lives. A bank cannot have an AML verdict at the application layer that disagrees with the audit-log entry at the substrate layer. A healthcare provider cannot have a triage decision at the application layer that disagrees with the retention/disclosure classification at the substrate layer. A law firm cannot have a privilege ruling at the application layer that disagrees with the jurisdiction-pinning at the substrate layer.
+Consumer AI is permitted to live with this *because Consumer AI is built for it*. Institutional AI is not. **The pivot is the audience.** Inconsistency in Consumer AI is a feature; inconsistency in Institutional AI is a structural-safety problem. Same word, opposite verdict, because the audience and the consequence space are different. Institutional AI is therefore not "Consumer AI with more guardrails" — it is a different product class with a different design target from sentence one.
+
+Inconsistency at the application layer becomes inconsistency at the data layer the moment a regulated decision is recorded — and the substrate-services layer is where the data layer lives. A bank cannot have an AML verdict at the application layer that disagrees with the audit-log entry at the substrate layer. A healthcare provider cannot have a triage decision at the application layer that disagrees with the retention/disclosure classification at the substrate layer. A law firm cannot have a privilege ruling at the application layer that disagrees with the jurisdiction-pinning at the substrate layer.
 
 Inconsistency in Institutional AI is not a tone problem. It is a **structural-safety problem**, and the substrate-services layer is where that safety is held.
 
@@ -80,25 +82,43 @@ Same code. Different classification. Same governance shape. Vertical-specific pr
 
 The first substrate classification in production-active development is **UniCORE.GVB.Law**, paired with the first Vertical CORE `UniCORE.Law-Claw`. Subsequent classifications follow the same pattern.
 
-## 5. The combined guarantee — substrate-services edition
+## 5. The human-side answer — Singular Pairing Principle (1H1C)
 
-> **Same user input + same governance MD-file set + same substrate classification + same Vertical-CORE consistency rules → same end-to-end outcome.**
+Foundation consistency and vertical consistency close the **machine-side** of the Inconsistency Problem. They guarantee that the same input, with the same governance state, in the same substrate classification, produces the same end-to-end outcome across vendors, sessions, nodes, and years.
+
+There is a second surface the machine-side answer cannot reach: **the humans steering the AI**.
+
+Multiple humans on one Claw produce conflicting authority signals; the AI cannot reconcile them without assuming authority it does not have. A single human across multiple parallel Claws produces context fragmentation; decisions made on one Claw are not visible on another. Committee-at-the-session-level produces no named authority; the AI is steered by the loudest voice in the room rather than by a single accountable signature. Each of these is a **human-side inconsistency** failure that arrives at the same outcome the machine-side is trying to prevent: same facts, different result.
+
+At the substrate-services layer this surface matters specifically because the producer-pairs that build, certify, and operate the substrate are the producer-pairs that decide whether the substrate's consistency posture is intact. If those producer-pairs are themselves inconsistent in shape, the substrate inherits the inconsistency before any application sits on top of it.
+
+The structural answer to the human-side surface is the **Singular Pairing Principle (1H1C)**: one human, one AI Claw, one workstream. The full doctrine — including how bonds expand with Project Level (up to 14+ paired bonds for a Level-12 Project), Patterns 1 and 2, the Generation IT producer qualification, and the recommendation-and-variants policy — lives at the canonical TrueAI document:
+
+[`bryanunitek/TrueAI/docs/10001-Singular-Pairing-Principle.md`](https://github.com/bryanunitek/TrueAI/blob/main/docs/10001-Singular-Pairing-Principle.md)
+
+**Recommendation and variants.** 1H1C is the deployment topology Unitek Systems Limited recommends and the only one Unitek itself deploys. Every Solution Unitek claims as TrueAI-aligned is produced under 1H1C — including the substrate-services Solutions on this codebase. Variants — multi-human-on-one-Claw, one-human-on-multiple-parallel-Claws, committee-at-the-session — are permitted under CC BY 4.0 but classified as **untested theory** until independently demonstrated to close the human-side surface as reliably as 1H1C does. The certification gate today recognises 1H1C only.
+
+Foundation consistency, vertical consistency, and singular human pairing are three structurally independent guarantees. Removing any one of them breaks the institutional case for the whole — at the substrate layer as much as at the application layer.
+
+## 6. The combined guarantee — substrate-services edition
+
+> **Same user input + same governance MD-file set + same substrate classification + same Vertical-CORE consistency rules + 1-Human-1-Claw producer pairing → same end-to-end outcome.**
 >
-> Across vendors. Across sessions. Across nodes. Across years. At both the application layer and the data layer.
+> Across vendors. Across sessions. Across nodes. Across years. Across producer-pairs that satisfy 1H1C. At both the application layer and the data layer.
 
 This is the guarantee a regulator can audit end-to-end — from the user's input, through the application's decision, through the substrate's data outcome, back to the same answer on the same evidence.
 
-## 6. Where this doctrine sits in the corpus
+## 7. Where this doctrine sits in the corpus
 
 The three pillars of Institutional AI doctrine, in order:
 
 1. **Audience pillar** — Consumer AI vs Institutional AI.
 2. **Truth pillar** — TrueAI Foundation truth contract.
-3. **Consistency pillar** — *(this doc)*. Foundation consistency (UniCORE-AI 12 Levels + MD files) plus vertical consistency (per substrate classification + per Vertical CORE).
+3. **Consistency pillar** — *(this doc)*. Two answer surfaces: **machine-side** (foundation consistency via UniCORE-AI 12 Levels + MD files; vertical consistency per substrate classification + per Vertical CORE) and **human-side** (Singular Pairing Principle / 1H1C, canonical at TrueAI).
 
 All three pillars hold simultaneously. Removing any one of them breaks the institutional case for the whole.
 
-## 7. Sister documents on neighbouring repositories
+## 8. Sister documents on neighbouring repositories
 
 - [`UniCORE`](https://github.com/bryanunitek/UniCORE) — implementation reference (on-prem deployment shape).
 - [`UniSaaS.UniCORE`](https://github.com/bryanunitek/UniSaaS.UniCORE) — implementation reference (SaaS deployment shape).
@@ -107,7 +127,7 @@ All three pillars hold simultaneously. Removing any one of them breaks the insti
 
 Foundation triad: [`TrueAI`](https://github.com/bryanunitek/TrueAI), [`UniCORE-AI`](https://github.com/bryanunitek/UniCORE-AI), [`UniVERSE`](https://github.com/bryanunitek/UniVERSE).
 
-## 8. Honest position on current state
+## 9. Honest position on current state
 
 UniCORE.GVB is documented but pre-source-code. The first paired Vertical CORE (`UniCORE.Law-Claw`) is in active development but has not yet passed the certification gate. The Inconsistency Problem doctrine is locked structurally; the implementation that demonstrates it end-to-end at the substrate layer arrives at certification, alongside the public source release.
 
