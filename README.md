@@ -51,6 +51,21 @@ When UniCORE.GVB is **certified Powered by UniCORE AI / built on the TrueAI Foun
 
 ---
 
+## The Inconsistency Problem — third pillar of Institutional AI doctrine
+
+Institutional AI fails the moment the same input produces a different output. Different vendors give different answers. The same vendor gives different answers in different sessions. Even the same session can drift. Acceptable for a recipe or a bedtime story. Structurally unsafe for a credit decision, a clinical triage, a tax classification, or a privilege ruling.
+
+UniCORE.GVB is the substrate-services layer of the answer:
+
+1. **Foundation consistency** — the [UniCORE AI](https://github.com/bryanunitek/UniCORE-AI) 12-Level governance stack and the per-level governance MD files. Same input + same governance state → same output. UniCORE.GVB carries the governance state at the substrate layer so every service inherits the consistency posture rather than re-implementing it.
+2. **Vertical consistency** — the substrate is **classified** per industry (`UniCORE.GVB.Law`, `UniCORE.GVB.Banking`, `UniCORE.GVB.Healthcare`, `UniCORE.GVB.Accounting`, …). Each classification adds vertical-specific consistency primitives (jurisdiction-pinning, retention, audit, isolation, federation rules) on top of the foundation guarantee.
+
+Truth without consistency is not deployable in regulated institutional settings. The Inconsistency Problem is the third pillar — sitting alongside the audience pillar (Consumer vs Institutional AI) and the truth pillar (TrueAI Foundation truth contract).
+
+Full doctrine: [`THE-INCONSISTENCY-PROBLEM.md`](THE-INCONSISTENCY-PROBLEM.md).
+
+---
+
 ## Why this repository exists today
 
 This repository exists today as the **canonical public home** for UniCORE.GVB — the place where its identity, licence, roadmap, naming rules, and industry classifications are recorded.
