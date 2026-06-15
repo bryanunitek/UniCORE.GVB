@@ -20,7 +20,7 @@ UniCORE.GVB is the substrate-services layer of the answer. **No AI architecture 
 And the human-side architecture, split by lifecycle layer:
 
 3. **Production layer — Singular Pairing Principle (1H1C)**: one human, one AI Claw, one workstream produces the certified substrate.
-4. **Operations layer — certified substrate runbook discipline**: a deployed substrate is run 24/7 by a structured operations cohort, not by a 1H1C pair. The interface between the production layer and the operations layer is the [Reasonable Governance Threshold](https://github.com/bryanunitek/UniCORE-AI/blob/main/docs/00007-Reasonable-Governance-Threshold-Specification.md).
+4. **Operations layer — xH1C with the substrate Claw as consistency-holding agent**: a deployed substrate is run 24/7 by a structured operations cohort under the substrate Claw, not by a 1H1C pair. The certified substrate runbook is the operational artefact the Claw runs operators against; the runbook is not, on its own, the consistency mechanism. **xH1C** = x Humans, 1 Claw — as close to 1H1C as humanly possible at 24/7 substrate scale. In PROD, per-Level qualification + no-Level-overlap apply. In DEV/TEST, the cohort collapses to **1H1C**. The interface between the production layer and the operations layer is the [Reasonable Governance Threshold](https://github.com/bryanunitek/UniCORE-AI/blob/main/docs/00007-Reasonable-Governance-Threshold-Specification.md).
 
 Truth without consistency is not deployable in regulated institutional settings. The Inconsistency Problem is the third pillar — sitting alongside the audience pillar (Consumer vs Institutional AI) and the truth pillar (TrueAI Foundation truth contract).
 
@@ -87,33 +87,39 @@ Same code. Different classification. Same governance shape. Vertical-specific pr
 
 The first substrate classification in production-active development is **UniCORE.GVB.Law**, paired with the first Vertical CORE `UniCORE.Law-Claw`. Subsequent classifications follow the same pattern.
 
-## 5. The human-side answer — Singular Pairing Principle (1H1C), production-layer-scoped + certified runbook discipline at operations
+## 5. The human-side answer — Singular Pairing Principle (1H1C) at production + xH1C at operations
 
 Foundation consistency and vertical consistency close the **machine-side** of the Inconsistency Problem. They guarantee that the same input, with the same governance state, in the same substrate classification, produces the same end-to-end outcome across vendors, sessions, nodes, and years — to the maximum extent the architecture controls.
 
 There is a second surface the machine-side answer cannot reach: **the humans steering the AI**. At the substrate-services layer this surface matters in two distinct ways: the producer-pairs that **build and certify** the substrate are different from the operations cohorts that **run** the substrate 24/7 across multiple Nodes. The human-side surface is closed in **two different places** by **two different mechanisms**:
 
-### Production layer (1H1C)
+### Production layer — 1H1C
 
 The certified substrate — its governance MD-file set, its 12-Level path, its per-industry classification, its certification artefacts — is produced by a **Singular Pairing**: one human, one AI Claw, one workstream. 1H1C closes the human-side surface **for the substrate artefacts being deployed** so the certified substrate does not inherit the inconsistency of its producers. Without 1H1C at the production layer, the substrate inherits the inconsistency before any application sits on top of it.
 
-The full 1H1C doctrine — including the v1.2 production-layer-vs-operations-layer split, Project-Level bond expansion, Patterns 1 and 2, the Generation IT producer qualification, and the recommendation-and-variants policy — lives at the canonical TrueAI document:
+The full 1H1C doctrine — including the v1.3 production-layer-vs-operations-layer split, Project-Level bond expansion, Patterns 1 and 2, the Generation IT producer qualification, and the recommendation-and-variants policy — lives at the canonical TrueAI document:
 
 [`bryanunitek/TrueAI/docs/10001-Singular-Pairing-Principle.md`](https://github.com/bryanunitek/TrueAI/blob/main/docs/10001-Singular-Pairing-Principle.md)
 
-### Operations layer (certified runbook discipline)
+### Operations layer — xH1C with the substrate Claw as consistency-holding agent
 
-A deployed UniCORE.GVB substrate is run 24/7 across multiple Nodes by a structured **operations cohort**, not by a 1H1C pair. Substrate operations consistency is held by the **certified substrate runbook**: explicit, version-locked, hash-attested operational procedures (per-Node provisioning, per-Level Claw shift coverage, federation-event handling, incident response, capacity escalation) that translate the producer-pair's certified envelope into shift-by-shift execution. Operators do not steer the substrate architecture; they run it under the runbook.
+A deployed UniCORE.GVB substrate is run 24/7 across multiple Nodes by a structured operations cohort. The cohort is not 1H1C; multi-Node operational reality (per-Node provisioning, per-Level Claw shift coverage, federation-event handling, incident response, capacity escalation) explicitly requires a cohort. The Singular Pairing posture is preserved at this layer by keeping **one Claw** — the substrate Claw bound to the certified substrate — as the consistency-holding agent across the cohort. The Claw runs the operators against the certified substrate runbook; the runbook is the operational artefact, the Claw is the consistency mechanism. Without one Claw across the cohort, substrate operations fragment into x independent operator-runbook pairs — a fragmentation that at the substrate layer would propagate upward into every application running on top.
+
+**xH1C = x Humans, 1 Claw.** As close to 1H1C as humanly possible at 24/7 substrate-operations scale, with the C side held singular and the H side scaled to tenant demand on the substrate.
+
+In **PROD**: each operator is qualified for **one specific Level** of the UniCORE-AI 12-Level Governance Model. One operator staffs one Level only — no Level-overlap per human, even during break windows. Cross-Level break cover is provided by another Level-qualified human at the same Level.
+
+In **DEV / TEST**: the cohort collapses to **1H1C** — one human covers all 12 Levels through the substrate Claw — because there is no production substrate tenant load and no per-tenant SLA. The producer-pair IS the operations cohort in DEV/TEST.
 
 ### Interface — Reasonable Governance Threshold
 
-The interface between substrate production and substrate operations is the [Reasonable Governance Threshold](https://github.com/bryanunitek/UniCORE-AI/blob/main/docs/00007-Reasonable-Governance-Threshold-Specification.md). Inside the threshold, the substrate operations cohort handles the runtime question under the runbook (per-Node tweaks, routine Node updates, scheduled maintenance, capacity scaling within envelope). Outside the threshold (substrate-architectural change, governance-MD update, classification reclassification, novel substrate incident class, vendor model change, regulatory inquiry), the question escalates back to the producer-pair.
+The interface between substrate production and substrate operations is the [Reasonable Governance Threshold](https://github.com/bryanunitek/UniCORE-AI/blob/main/docs/00007-Reasonable-Governance-Threshold-Specification.md). Inside the threshold, the xH1C substrate operations cohort handles the runtime question under the runbook through the substrate Claw (per-Node tweaks, routine Node updates, scheduled maintenance, capacity scaling within envelope). Outside the threshold (substrate-architectural change, governance-MD update, classification reclassification, novel substrate incident class, vendor model change, regulatory inquiry), the question escalates back to the producer-pair (1H1C).
 
 ### Recommendation and variants
 
 1H1C at the production layer is the deployment topology Unitek Systems Limited recommends and the only one Unitek itself deploys. Every Solution Unitek claims as TrueAI-aligned is produced under 1H1C — including the substrate-services Solutions on this codebase. Variants — multi-human-on-one-Claw, one-human-on-multiple-parallel-Claws, committee-at-the-session — are permitted under CC BY 4.0 but classified as **untested theory** until independently demonstrated to close the human-side surface as reliably as 1H1C does. The certification gate today recognises 1H1C only.
 
-Foundation consistency, vertical consistency, singular human pairing at the production layer, and certified runbook discipline at the substrate operations layer are four structurally independent guarantees. Removing any one of them breaks the institutional case for the whole — at the substrate layer as much as at the application layer.
+Foundation consistency, vertical consistency, singular human pairing at the production layer (1H1C), and xH1C at the substrate operations layer with the substrate Claw as consistency-holding agent are four structurally independent guarantees. Removing any one of them breaks the institutional case for the whole — at the substrate layer as much as at the application layer.
 
 ## 6. The combined guarantee — substrate-services edition, honest framing
 
@@ -124,9 +130,9 @@ What UniCORE.GVB makes is the **structural maximum** consistency achievable give
 - **Where UniCORE.GVB controls the surface, the surface is deterministic.** Governance MD-files are version-locked and hash-attested; the 12-Level path is structurally enforced; substrate-side data outcomes are uniform across nodes; Vertical-CORE consistency primitives are classified per industry.
 - **Where the external AI model controls the surface, the surface is non-deterministic by physics.** The residual inconsistency from the external model is real, irreducible at the boundary, and **named-bounded-auditable**: the substrate-side evidence chain records what governance state applied, what input was given, what decision the AI returned, and which version of the external AI was in use.
 
-> **Same user input + same governance MD-file set + same substrate classification + same Vertical-CORE consistency rules + 1-Human-1-Claw producer pairing at the production layer + certified substrate-runbook discipline at the operations layer → the closest end-to-end consistency achievable given the external-AI dependency, with the residual inconsistency named, bounded, and auditable.**
+> **Same user input + same governance MD-file set + same substrate classification + same Vertical-CORE consistency rules + 1-Human-1-Claw producer pairing at the production layer + xH1C at the substrate operations layer with the substrate Claw as consistency-holding agent and per-Level qualification (PROD) → the closest end-to-end consistency achievable given the external-AI dependency, with the residual inconsistency named, bounded, and auditable.**
 >
-> Across vendors. Across sessions. Across nodes. Across years. Across producer-pairs that satisfy 1H1C at the production layer. Across operations cohorts that run the certified substrate runbook. At both the application layer and the substrate data layer.
+> Across vendors. Across sessions. Across nodes. Across years. Across producer-pairs that satisfy 1H1C at the production layer. Across xH1C substrate operations cohorts running the certified substrate runbook under the substrate Claw. At both the application layer and the substrate data layer.
 >
 > Where the external AI introduces residual drift, the substrate-side evidence chain captures it so the residual surface is auditable end-to-end.
 
