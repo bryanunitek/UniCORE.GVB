@@ -12,7 +12,7 @@ Status: Public. Given, not sold. Irrevocable. CC BY 4.0.
 
 Institutional AI fails the moment the same input produces a different output. Different vendors give different answers. The same vendor gives different answers in different sessions. Even the same session can drift. Acceptable for a recipe or a bedtime story. Structurally unsafe for a credit decision, a clinical triage, a tax classification, a privilege ruling, or any outcome that touches money, freedom, health, or rights.
 
-UniCORE.GVB is the substrate-services layer of the answer. The two-layer architecture is:
+UniCORE.GVB is the substrate-services layer of the answer. **No AI architecture today can guarantee 100% consistency** — probabilistic language models sit at the application boundary; their training is vendor-controlled and changes over time. What UniCORE.GVB makes is consistency **as close to absolute as the constraints UniCORE.GVB controls allow**, and **names, bounds, and audits the residual** that lies outside that control. The two-layer architecture is:
 
 1. **Foundation consistency** — the [UniCORE AI](https://github.com/bryanunitek/UniCORE-AI) 12-Level governance stack and the per-level governance MD files. Same input + same governance state → same output. UniCORE.GVB carries the governance state at the substrate layer so every service inherits the consistency posture rather than re-implementing it.
 2. **Vertical consistency** — the substrate is **classified** per industry (`UniCORE.GVB.Law`, `UniCORE.GVB.Banking`, `UniCORE.GVB.Healthcare`, `UniCORE.GVB.Accounting`, …). Each classification adds vertical-specific consistency primitives (jurisdiction-pinning, retention, audit, isolation, federation rules) on top of the foundation guarantee.
@@ -100,13 +100,24 @@ The structural answer to the human-side surface is the **Singular Pairing Princi
 
 Foundation consistency, vertical consistency, and singular human pairing are three structurally independent guarantees. Removing any one of them breaks the institutional case for the whole — at the substrate layer as much as at the application layer.
 
-## 6. The combined guarantee — substrate-services edition
+## 6. The combined guarantee — substrate-services edition, honest framing
 
-> **Same user input + same governance MD-file set + same substrate classification + same Vertical-CORE consistency rules + 1-Human-1-Claw producer pairing → same end-to-end outcome.**
+**No AI architecture today can guarantee 100% consistency.** Probabilistic language models sit at the application boundary; their training is controlled by their vendors, not by UniCORE.GVB; and that training changes over time. Any claim of absolute end-to-end determinism would be dishonest.
+
+What UniCORE.GVB makes is the **structural maximum** consistency achievable given that external-AI dependency:
+
+- **Where UniCORE.GVB controls the surface, the surface is deterministic.** Governance MD-files are version-locked and hash-attested; the 12-Level path is structurally enforced; substrate-side data outcomes are uniform across nodes; Vertical-CORE consistency primitives are classified per industry.
+- **Where the external AI model controls the surface, the surface is non-deterministic by physics.** The residual inconsistency from the external model is real, irreducible at the boundary, and **named-bounded-auditable**: the substrate-side evidence chain records what governance state applied, what input was given, what decision the AI returned, and which version of the external AI was in use.
+
+> **Same user input + same governance MD-file set + same substrate classification + same Vertical-CORE consistency rules + 1-Human-1-Claw producer pairing → the closest end-to-end consistency achievable given the external-AI dependency, with the residual inconsistency named, bounded, and auditable.**
 >
-> Across vendors. Across sessions. Across nodes. Across years. Across producer-pairs that satisfy 1H1C. At both the application layer and the data layer.
+> Across vendors. Across sessions. Across nodes. Across years. Across producer-pairs that satisfy 1H1C. At both the application layer and the substrate data layer.
+>
+> Where the external AI introduces residual drift, the substrate-side evidence chain captures it so the residual surface is auditable end-to-end.
 
-This is the guarantee a regulator can audit end-to-end — from the user's input, through the application's decision, through the substrate's data outcome, back to the same answer on the same evidence.
+This is the posture a regulator can audit end-to-end — including its honestly-named edge — from the user's input, through the application's decision, through the substrate's data outcome, back to the same answer on the same evidence with the residual surface exposed rather than hidden.
+
+**Canonical edition** of this doctrine lives at [`bryanunitek/TrueAI/THE-INCONSISTENCY-PROBLEM.md`](https://github.com/bryanunitek/TrueAI/blob/main/THE-INCONSISTENCY-PROBLEM.md).
 
 ## 7. Where this doctrine sits in the corpus
 
