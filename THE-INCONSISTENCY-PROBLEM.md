@@ -97,7 +97,7 @@ There is a second surface the machine-side answer cannot reach: **the humans ste
 
 The certified substrate — its governance MD-file set, its 12-Level path, its per-industry classification, its certification artefacts — is produced by a **Singular Pairing**: one human, one AI Claw, one workstream. 1H1C closes the human-side surface **for the substrate artefacts being deployed** so the certified substrate does not inherit the inconsistency of its producers. Without 1H1C at the production layer, the substrate inherits the inconsistency before any application sits on top of it.
 
-The full 1H1C doctrine — including the v1.3 production-layer-vs-operations-layer split, Project-Level bond expansion, Patterns 1 and 2, the Generation IT producer qualification, and the recommendation-and-variants policy — lives at the canonical TrueAI document:
+The full 1H1C doctrine — including the production-layer-vs-operations-layer split, Project-Level bond expansion, Patterns 1 and 2, the Generation IT producer qualification, and the recommendation-and-variants policy — lives at the canonical TrueAI document:
 
 [`bryanunitek/TrueAI/docs/10001-Singular-Pairing-Principle.md`](https://github.com/bryanunitek/TrueAI/blob/main/docs/10001-Singular-Pairing-Principle.md)
 
