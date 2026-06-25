@@ -90,12 +90,6 @@ The GVB infrastructure maintains its own breach notification obligations under a
 
 ---
 
-## Relationship to the Book of Unitek Systems Limited
-
-Operational GVB AI compliance posture and the jurisdictional position for GVB deployments are documented in the Book of Unitek Systems Limited, Chapter A3, §GVB Infrastructure.
-
----
-
 ## Version
 
 | Version | Date | Change |
