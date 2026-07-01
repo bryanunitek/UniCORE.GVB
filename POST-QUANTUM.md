@@ -50,6 +50,8 @@ These dates are industry and government targets for *tooling*. The data-protecti
 
 GVB's public front door terminates TLS with a standards-current, auto-renewing certificate and modern TLS 1.3 cipher suites. Symmetric data-at-rest protection uses AES-256, which is already considered quantum-resistant at the relevant security level.
 
+String (NVARCHAR) data across the substrate is governed by the four-mode **NVarchar Data Mode** posture — **Scrambled** (default) / **Open** / **Encrypted** (reserved) / **Quancrypted** (reserved). **Quancrypted** is the data-at-rest quantum-safe end-state: the same field-level encryption as Encrypted, but with post-quantum key protection (ML-KEM / FIPS 203 key encapsulation), so a harvested field cannot be decrypted later by a quantum computer. Today, fields can be *tagged* for Encrypted/Quancrypted and the persistence seam carries the mode, but the cryptographic implementations of those two modes are **not yet shipped**.
+
 **What is NOT yet done, stated plainly:**
 
 - Hybrid post-quantum **key exchange** (X25519 + ML-KEM) is **not yet enabled** on the public TLS front door. It is deployable in the current reverse-proxy stack and is the first concrete migration step.
@@ -86,8 +88,9 @@ The build is phased and gated. Each phase is honest about being design, build, o
 | **P1 — Long-lived signature seam** | Define a signature abstraction for evidence/provenance/ratification records that can carry classical, hybrid, or post-quantum signatures without changing the record model | Designed / building |
 | **P2 — Hybrid TLS front door** | Enable X25519 + ML-KEM hybrid key exchange on the public reverse proxy | Ready to build (config/version) |
 | **P3 — PQC-capable CA** | Stand up / configure the internal certificate authority with a post-quantum signature path | Design |
-| **P4 — Transport keys** | Post-quantum-hybrid key exchange for administrative/SSH access | Later |
-| **P5 — Verify & attest** | Independent verification that shipped PQC matches the posture, recorded in the canonical evidence chain | Later |
+| **P4 — Quancrypted data-at-rest** | ML-KEM key protection on the `Quancrypted` NVarchar mode (Encrypted/classical-wrap as interim) | Mode declared, crypto not shipped |
+| **P5 — Transport keys** | Post-quantum-hybrid key exchange for administrative/SSH access | Later |
+| **P6 — Verify & attest** | Independent verification that shipped PQC matches the posture, recorded in the canonical evidence chain | Later |
 
 Nothing above is claimed as shipped except P0.
 
