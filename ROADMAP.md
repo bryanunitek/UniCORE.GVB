@@ -129,6 +129,8 @@ This repository inherits that posture. The `Version: 1.0` line is a placeholder.
 
 The same horizon that applies to the wider programme applies here. UniCORE.GVB source publication depends on the certification arc; the certification arc takes as long as it takes to build the substrate-services to the standard the invariants require. That is decade-shaped work.
 
+One chapter of that horizon is the transition to post-quantum cryptography, sequenced against a now-public, industry-shared clock (NIST FIPS 203/204/205; begin before 2030, disallow classical public-key by 2035). See [`POST-QUANTUM.md`](POST-QUANTUM.md) for the threat, current honest status, priority order (long-lived record signatures first), roadmap, and timeline.
+
 For the canonical horizon statement, see [`UniVERSE/HORIZON.md`](https://github.com/bryanunitek/UniVERSE/blob/main/HORIZON.md).
 
 ---
