@@ -95,12 +95,3 @@ The GVB infrastructure maintains its own breach notification obligations under a
 | Version | Date | Change |
 |---|---|---|
 | 1.0 | June 2026 | First publication. Describes the GVB AI compliance model, badge certification infrastructure, and relationship to the UniCORE substrate. |
-
----
-
-## Document history
-
-- 2026-06-25 (755c463) — docs: add AI-COMPLIANCE.md — GVB layer AI compliance posture and badge infrastructure
-- 2026-06-25 (8782d0c) — docs: remove Book of Unitek Systems Limited references — public repos must not reference private operational documentation
-
-*Back-filled from git log on 2026-07-10 21:34 UTC. Kind 2 versioning (dated change notes) — see HORIZON.md § Evolution and versioning. Kind 1 (formal `Version:` bumps) remains OFF until first GitHub Discussion.*

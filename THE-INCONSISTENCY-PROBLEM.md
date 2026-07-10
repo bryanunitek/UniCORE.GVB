@@ -173,19 +173,3 @@ UniCORE.GVB is documented but pre-source-code. The first paired Vertical CORE (`
 Attribution required wherever the Inconsistency Problem doctrine, the 12-Level Governance Model, the TrueAI Foundation, or the UniCORE name is referenced, implemented, or extended.
 
 — Bryan Fred, Unitek Systems Limited, Bedford, United Kingdom, 2026-06-14.
-
----
-
-## Document history
-
-- 2026-06-14 (9031917) — docs: third pillar of Institutional AI doctrine — The Inconsistency Problem (substrate-services layer)
-- 2026-06-14 (afe51c9) — docs(inconsistency-problem): rename TL;DR heading to "Summary (TL;DR)"
-- 2026-06-14 (f55d220) — docs(inconsistency-problem): sharpen §1 (Consumer AI by design) + add §5 human-side answer (1H1C)
-- 2026-06-15 (d7b897d) — docs: THE-INCONSISTENCY-PROBLEM.md — honest guarantee framing (substrate-services edition)
-- 2026-06-15 (0aac7ba) — docs: THE-INCONSISTENCY-PROBLEM.md — production-layer-vs-operations-layer correction (substrate-services)
-- 2026-06-15 (f14efa6) — docs: § "Summary (TL;DR)" → "Summary" (institutional-tone correction)
-- 2026-06-15 (1c87653) — docs: Inconsistency (substrate) — xH1C operations + per-Level + DEV/TEST 1H1C (SPP v1.3 alignment)
-- 2026-06-15 (f73a8a7) — docs: fix dead Reasonable Governance Threshold link — UniCORE-AI → UniVERSE
-- 2026-06-17 (c7f4c0c) — Strip 'v1.3' from Singular-Pairing-Principle pointer text
-
-*Back-filled from git log on 2026-07-10 21:34 UTC. Kind 2 versioning (dated change notes) — see HORIZON.md § Evolution and versioning. Kind 1 (formal `Version:` bumps) remains OFF until first GitHub Discussion.*

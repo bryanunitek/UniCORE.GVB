@@ -120,12 +120,3 @@ The programme deliberately moves ahead of the tooling deadlines for the surfaces
 *This document is part of the UniCORE public gift surface, given under CC BY 4.0. It is a posture and roadmap, not a claim of completed protection. Where it describes future work, that work is not yet shipped.*
 
 *Time horizon: this is a decades-long substrate. The quantum transition is one chapter of that horizon, sequenced against a clock that is now public and shared across the whole industry.*
-
----
-
-## Document history
-
-- 2026-07-01 (ea6bcce) — Add POST-QUANTUM.md: PQC posture, roadmap & timeline (public gift surface)
-- 2026-07-01 (a5ebc5e) — Add Quancrypted as 4th NVarchar Data Mode (PQC data-at-rest end-state)
-
-*Back-filled from git log on 2026-07-10 21:34 UTC. Kind 2 versioning (dated change notes) — see HORIZON.md § Evolution and versioning. Kind 1 (formal `Version:` bumps) remains OFF until first GitHub Discussion.*
