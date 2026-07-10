@@ -125,3 +125,11 @@ THIS MATERIAL IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPL
 
 *Powered by UniCORE AI.*
 *Built on the TrueAI Foundation.*
+
+---
+
+## Document history
+
+- 2026-05-21 (e25ada1) — docs: initial v0.01 — public canonical home for UniCORE.GVB
+
+*Back-filled from git log on 2026-07-10 21:34 UTC. Kind 2 versioning (dated change notes) — see HORIZON.md § Evolution and versioning. Kind 1 (formal `Version:` bumps) remains OFF until first GitHub Discussion.*

@@ -434,3 +434,31 @@ UniCORE.GVB is the substrate-services layer of governed AI. It is not a product,
 
 - **Public discussion:** [GitHub Discussions](https://github.com/bryanunitek/UniCORE.GVB/discussions) (see [DISCUSSIONS.md](DISCUSSIONS.md))
 - **Private contact / connection request:** [LinkedIn](https://www.linkedin.com/in/bryan-fred-02209753/)
+
+---
+
+## Document history
+
+- 2026-05-21 (e25ada1) — docs: initial v0.01 — public canonical home for UniCORE.GVB
+- 2026-05-21 (48e1454) — docs: expand substrate-services scope to full coverage
+- 2026-05-21 (706b02a) — docs: add UniCORE.Desktop — client applications section
+- 2026-05-21 (2410697) — docs: extend Positioning Principle with badge-denial-on-military clause
+- 2026-05-21 (bfa29bd) — docs: add (see DISCUSSIONS.md) hint in Contact section to match triad parity
+- 2026-05-22 (088aa97) — docs: index LICENSE_EXAMPLES.md in README — licensing reference with worked scenarios
+- 2026-05-22 (ab739cd) — docs: complete version-marker sweep across public corpus
+- 2026-05-23 (f3bfd3f) — docs(readme): add cross-reference pointer to UniVERSE/GETTING_STARTED.md
+- 2026-05-31 (3aeede8) — docs(README): add Site builder and content scope sub-section + two-substrate parity narrative (Sanity Checkpoint #010 Action 6)
+- 2026-06-03 (1f3e2b0) — docs(README): add UniVIEW and UniREPORT — view and reporting applications
+- 2026-06-03 (6c13bd5) — docs: add UniSaaS sister repos + SaaS deployment shape section
+- 2026-06-03 (65f3d89) — docs: add NVarchar Data Mode paragraph to substrate description
+- 2026-06-04 (ed343a4) — docs(README): add Platforms and UI Surfaces section
+- 2026-06-04 (ca030b0) — docs(README): cross-reference Avalonia + DNN forked-upstream families
+- 2026-06-04 (40b69a1) — docs(README): cross-reference UniCORE-Claw substrate-harness pair
+- 2026-06-04 (30e55b9) — docs(README): cross-reference Asterisk, Jitsi, Signal, XCP families
+- 2026-06-06 (d9e6a1c) — docs(readme): add fleet inventory pointer (193 repos, Book canonical home)
+- 2026-06-14 (9031917) — docs: third pillar of Institutional AI doctrine — The Inconsistency Problem (substrate-services layer)
+- 2026-06-15 (bab278b) — docs(README): add Three Pillars framing block — Audience / Truth / Inconsistency
+- 2026-06-19 (39d1e72) — docs(README): add strap-line to 'Why...' section
+- 2026-07-01 (a5ebc5e) — Add Quancrypted as 4th NVarchar Data Mode (PQC data-at-rest end-state)
+
+*Back-filled from git log on 2026-07-10 21:34 UTC. Kind 2 versioning (dated change notes) — see HORIZON.md § Evolution and versioning. Kind 1 (formal `Version:` bumps) remains OFF until first GitHub Discussion.*
