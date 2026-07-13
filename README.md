@@ -89,7 +89,7 @@ UniCORE.GVB is the substrate-services layer of the answer:
 
 Truth without consistency is not deployable in regulated institutional settings. The Inconsistency Problem is the third pillar — sitting alongside the audience pillar (Consumer vs Institutional AI) and the truth pillar (TrueAI Foundation truth contract).
 
-Full doctrine: [`THE-INCONSISTENCY-PROBLEM.md`](THE-INCONSISTENCY-PROBLEM.md).
+Full doctrine: [`THE-INCONSISTENCY-PROBLEM.md`](https://git.unitek-systems.com/UniCORE/UniCORE.GVB/src/branch/main/THE-INCONSISTENCY-PROBLEM.md) (mirror: [GitHub](https://github.com/bryanunitek/UniCORE.GVB/blob/main/THE-INCONSISTENCY-PROBLEM.md)).
 
 ---
 
@@ -99,16 +99,16 @@ Full doctrine: [`THE-INCONSISTENCY-PROBLEM.md`](THE-INCONSISTENCY-PROBLEM.md).
 
 This repository exists today as the **canonical public home** for UniCORE.GVB — the place where its identity, licence, roadmap, naming rules, and industry classifications are recorded.
 
-**The source code is not yet published here.** Source code is published when UniCORE.GVB is certified Powered by UniCORE AI / built on the TrueAI Foundation. See [ROADMAP.md](ROADMAP.md) for the trigger condition and what arrives at that point.
+**The source code is not yet published here.** Source code is published when UniCORE.GVB is certified Powered by UniCORE AI / built on the TrueAI Foundation. See [ROADMAP.md](https://git.unitek-systems.com/UniCORE/UniCORE.GVB/src/branch/main/ROADMAP.md) (mirror: [GitHub](https://github.com/bryanunitek/UniCORE.GVB/blob/main/ROADMAP.md)) for the trigger condition and what arrives at that point.
 
 What is published here today:
 
-- **The licence** — CC BY 4.0, irrevocable, the same terms as the rest of the programme. See [LICENSE.md](LICENSE.md).
-- **The licensing reference with worked scenarios** — plain-English guidance for Partners, Clients, and Software Providers, with worked examples per industry. See [LICENSE_EXAMPLES.md](LICENSE_EXAMPLES.md).
-- **The naming and claims rules** — what can and cannot be claimed about the UniCORE.GVB name. See [STATEMENT-ON-CLAIMS.md](STATEMENT-ON-CLAIMS.md).
-- **The roadmap** — what arrives at certification and in what shape. See [ROADMAP.md](ROADMAP.md).
-- **The AI authorship disclosure** — same disclosure form as the Foundation triad. See [AI-AUTHORSHIP.md](AI-AUTHORSHIP.md).
-- **The agent rules** — how Claws working on this repository conduct themselves. See [AGENTS.md](AGENTS.md).
+- **The licence** — CC BY 4.0, irrevocable, the same terms as the rest of the programme. See [LICENSE.md](https://git.unitek-systems.com/UniCORE/UniCORE.GVB/src/branch/main/LICENSE.md) (mirror: [GitHub](https://github.com/bryanunitek/UniCORE.GVB/blob/main/LICENSE.md)).
+- **The licensing reference with worked scenarios** — plain-English guidance for Partners, Clients, and Software Providers, with worked examples per industry. See [LICENSE_EXAMPLES.md](https://git.unitek-systems.com/UniCORE/UniCORE.GVB/src/branch/main/LICENSE_EXAMPLES.md) (mirror: [GitHub](https://github.com/bryanunitek/UniCORE.GVB/blob/main/LICENSE_EXAMPLES.md)).
+- **The naming and claims rules** — what can and cannot be claimed about the UniCORE.GVB name. See [STATEMENT-ON-CLAIMS.md](https://git.unitek-systems.com/UniCORE/UniCORE.GVB/src/branch/main/STATEMENT-ON-CLAIMS.md) (mirror: [GitHub](https://github.com/bryanunitek/UniCORE.GVB/blob/main/STATEMENT-ON-CLAIMS.md)).
+- **The roadmap** — what arrives at certification and in what shape. See [ROADMAP.md](https://git.unitek-systems.com/UniCORE/UniCORE.GVB/src/branch/main/ROADMAP.md) (mirror: [GitHub](https://github.com/bryanunitek/UniCORE.GVB/blob/main/ROADMAP.md)).
+- **The AI authorship disclosure** — same disclosure form as the Foundation triad. See [AI-AUTHORSHIP.md](https://git.unitek-systems.com/UniCORE/UniCORE.GVB/src/branch/main/AI-AUTHORSHIP.md) (mirror: [GitHub](https://github.com/bryanunitek/UniCORE.GVB/blob/main/AI-AUTHORSHIP.md)).
+- **The agent rules** — how Claws working on this repository conduct themselves. See [AGENTS.md](https://git.unitek-systems.com/UniCORE/UniCORE.GVB/src/branch/main/AGENTS.md) (mirror: [GitHub](https://github.com/bryanunitek/UniCORE.GVB/blob/main/AGENTS.md)).
 
 The repository will accumulate documentation between now and certification. Source code arrives at certification, simultaneously across this repository and the industry-classified sibling repositories.
 
@@ -248,7 +248,7 @@ UniCORE.GVB is the substrate-services layer. It does not carry industry-specific
 
 **Two-substrate parity at the customer-account-and-content layer.** UniCORE.GVB ships as one codebase that runs on either a Linux substrate or a Windows substrate. The two branches are co-equal at the control-surface layer (same governance, same Cross-Platform API surface, same evidence trail, same attestation shape). They differ at the third-party-integration layer: the Linux branch embeds established open / industry-standard reference products at the customer-account-and-content layer; the Windows branch combines third-party reference products at the hosting-account layer with a **native UniCORE.GVB.SiteBuilder** at the site-and-content layer. SiteBuilder is the first substrate-services component met by Unitek-original code rather than by wrapping a reference product. The scope above is invariant across both substrates.
 
-**NVarchar Data Mode (Scrambled / Open / Encrypted / Quancrypted).** All NVARCHAR (string) data across the substrate is governed by a four-mode architecture. Default posture: **Scrambled** — all string fields arrive Scrambled unless explicitly resolved otherwise by a policy chain (Workload → Tenant → Product → Default). Open mode is used where scrambling is operationally inappropriate (e.g. full-text search indexes). Encrypted mode is reserved (future feature; customer holds the decryption key per sovereignty principle). **Quancrypted** mode is reserved (future feature): the same field-level encryption as Encrypted, but with **post-quantum** key protection (ML-KEM key encapsulation, NIST FIPS 203) so the data survives a cryptographically-relevant quantum computer — the quantum-safe end-state of the data-at-rest posture, and the data-at-rest counterpart of [`POST-QUANTUM.md`](POST-QUANTUM.md). The customer still holds the key (sovereignty principle). The enum, resolver, and policy store live at `UniCORE.GVB.Common` so that every Vertical CORE inherits the data-mode posture without re-implementing it.
+**NVarchar Data Mode (Scrambled / Open / Encrypted / Quancrypted).** All NVARCHAR (string) data across the substrate is governed by a four-mode architecture. Default posture: **Scrambled** — all string fields arrive Scrambled unless explicitly resolved otherwise by a policy chain (Workload → Tenant → Product → Default). Open mode is used where scrambling is operationally inappropriate (e.g. full-text search indexes). Encrypted mode is reserved (future feature; customer holds the decryption key per sovereignty principle). **Quancrypted** mode is reserved (future feature): the same field-level encryption as Encrypted, but with **post-quantum** key protection (ML-KEM key encapsulation, NIST FIPS 203) so the data survives a cryptographically-relevant quantum computer — the quantum-safe end-state of the data-at-rest posture, and the data-at-rest counterpart of [`POST-QUANTUM.md`](https://git.unitek-systems.com/UniCORE/UniCORE.GVB/src/branch/main/POST-QUANTUM.md) (mirror: [GitHub](https://github.com/bryanunitek/UniCORE.GVB/blob/main/POST-QUANTUM.md)). The customer still holds the key (sovereignty principle). The enum, resolver, and policy store live at `UniCORE.GVB.Common` so that every Vertical CORE inherits the data-mode posture without re-implementing it.
 
 ---
 
@@ -412,7 +412,7 @@ Given, not sold. The substrate-services layer is public, open, and free. The Tru
 
 ## AI authorship
 
-This repository is produced with AI assistance operating under TrueAI governance. The full disclosure is at [AI-AUTHORSHIP.md](AI-AUTHORSHIP.md).
+This repository is produced with AI assistance operating under TrueAI governance. The full disclosure is at [AI-AUTHORSHIP.md](https://git.unitek-systems.com/UniCORE/UniCORE.GVB/src/branch/main/AI-AUTHORSHIP.md) (mirror: [GitHub](https://github.com/bryanunitek/UniCORE.GVB/blob/main/AI-AUTHORSHIP.md)).
 
 ---
 
@@ -426,11 +426,11 @@ For Foundation-level debate, use [UniVERSE](https://github.com/bryanunitek/UniVE
 
 ## Classification, brand, and claims
 
-UniCORE.GVB is the substrate-services layer of governed AI. It is not a product, platform, SaaS offering, tool category, or brand for sale. See [STATEMENT-ON-CLAIMS.md](STATEMENT-ON-CLAIMS.md) for binding rules on how the UniCORE.GVB name may and may not be used.
+UniCORE.GVB is the substrate-services layer of governed AI. It is not a product, platform, SaaS offering, tool category, or brand for sale. See [STATEMENT-ON-CLAIMS.md](https://git.unitek-systems.com/UniCORE/UniCORE.GVB/src/branch/main/STATEMENT-ON-CLAIMS.md) (mirror: [GitHub](https://github.com/bryanunitek/UniCORE.GVB/blob/main/STATEMENT-ON-CLAIMS.md)) for binding rules on how the UniCORE.GVB name may and may not be used.
 
 ---
 
 ## Contact
 
-- **Public discussion:** [GitHub Discussions](https://github.com/bryanunitek/UniCORE.GVB/discussions) (see [DISCUSSIONS.md](DISCUSSIONS.md))
+- **Public discussion:** [GitHub Discussions](https://github.com/bryanunitek/UniCORE.GVB/discussions) (see [DISCUSSIONS.md](https://git.unitek-systems.com/UniCORE/UniCORE.GVB/src/branch/main/DISCUSSIONS.md) (mirror: [GitHub](https://github.com/bryanunitek/UniCORE.GVB/blob/main/DISCUSSIONS.md)))
 - **Private contact / connection request:** [LinkedIn](https://www.linkedin.com/in/bryan-fred-02209753/)

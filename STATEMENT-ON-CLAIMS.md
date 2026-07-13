@@ -53,7 +53,7 @@ The current list of classifications is:
 | `UniCORE.GVB.Government` | Government and public sector |
 | `UniCORE.GVB.Space-Industry` | Space industry |
 
-The list is **open** and is defined as the programme expands. New classifications are added under the rule recorded in [ROADMAP.md](ROADMAP.md). Each classification name is in scope of this statement when added.
+The list is **open** and is defined as the programme expands. New classifications are added under the rule recorded in [ROADMAP.md](https://git.unitek-systems.com/UniCORE/UniCORE.GVB/src/branch/main/ROADMAP.md) (mirror: [GitHub](https://github.com/bryanunitek/UniCORE.GVB/blob/main/ROADMAP.md)). Each classification name is in scope of this statement when added.
 
 ### Military is intentionally absent
 
@@ -79,7 +79,7 @@ No person, company, consortium, standards body, regulator, or research group may
 These restrictions do not prevent:
 
 - **Implementation** of substrate-services that satisfy the TrueAI Foundation invariants, the UniCORE AI architecture, and the published UniCORE.GVB substrate (once published). Implementation is encouraged.
-- **Commercial work** performed around such an implementation — integration, training, support, extensions outside the core. This is permitted, subject to the gift principle and the monopoly clause in [LICENSE.md](LICENSE.md).
+- **Commercial work** performed around such an implementation — integration, training, support, extensions outside the core. This is permitted, subject to the gift principle and the monopoly clause in [LICENSE.md](https://git.unitek-systems.com/UniCORE/UniCORE.GVB/src/branch/main/LICENSE.md) (mirror: [GitHub](https://github.com/bryanunitek/UniCORE.GVB/blob/main/LICENSE.md)).
 - **Hosted-service operation** by anyone — including Unitek Systems USA Inc — under the same CC BY 4.0 licence available to everyone. There is no privileged operator tier.
 - **Academic, policy, and public-interest citation** of UniCORE.GVB. Welcomed, subject to CC BY 4.0 attribution.
 - **Public challenge, correction, or stress-testing** of UniCORE.GVB on the Discussions tab.
@@ -91,7 +91,7 @@ These restrictions do not prevent:
 
 Unitek Systems USA Inc may operate hosted services on top of UniCORE.GVB. When it does, it does so as **one consumer of the gift among many**, under the same CC BY 4.0 licence as anyone else.
 
-Unitek Systems USA Inc is not the privileged operator. The substrate is gift; the operation is service; the two are different layers and the second does not enclose the first. See [ROADMAP.md](ROADMAP.md) for the structural detail.
+Unitek Systems USA Inc is not the privileged operator. The substrate is gift; the operation is service; the two are different layers and the second does not enclose the first. See [ROADMAP.md](https://git.unitek-systems.com/UniCORE/UniCORE.GVB/src/branch/main/ROADMAP.md) (mirror: [GitHub](https://github.com/bryanunitek/UniCORE.GVB/blob/main/ROADMAP.md)) for the structural detail.
 
 ---
 

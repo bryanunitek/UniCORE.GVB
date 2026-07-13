@@ -2,7 +2,7 @@
 
 *Status: DRAFT v0.01 · substrate-services layer · public gift surface (CC BY 4.0)*
 
-Sister documents: [ROADMAP.md](ROADMAP.md) · [REGULATORY-ALIGNMENT.md](REGULATORY-ALIGNMENT.md) · [STATEMENT-ON-CLAIMS.md](STATEMENT-ON-CLAIMS.md)
+Sister documents: [ROADMAP.md](https://git.unitek-systems.com/UniCORE/UniCORE.GVB/src/branch/main/ROADMAP.md) (mirror: [GitHub](https://github.com/bryanunitek/UniCORE.GVB/blob/main/ROADMAP.md)) · [REGULATORY-ALIGNMENT.md](https://git.unitek-systems.com/UniCORE/UniCORE.GVB/src/branch/main/REGULATORY-ALIGNMENT.md) (mirror: [GitHub](https://github.com/bryanunitek/UniCORE.GVB/blob/main/REGULATORY-ALIGNMENT.md)) · [STATEMENT-ON-CLAIMS.md](https://git.unitek-systems.com/UniCORE/UniCORE.GVB/src/branch/main/STATEMENT-ON-CLAIMS.md) (mirror: [GitHub](https://github.com/bryanunitek/UniCORE.GVB/blob/main/STATEMENT-ON-CLAIMS.md))
 
 ---
 
