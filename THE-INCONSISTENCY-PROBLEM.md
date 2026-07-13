@@ -14,13 +14,13 @@ Institutional AI fails the moment the same input produces a different output. Di
 
 UniCORE.GVB is the substrate-services layer of the answer. **No AI architecture today can guarantee 100% consistency** — probabilistic language models sit at the application boundary; their training is vendor-controlled and changes over time. What UniCORE.GVB makes is consistency **as close to absolute as the constraints UniCORE.GVB controls allow**, and **names, bounds, and audits the residual** that lies outside that control. The two-layer machine-side architecture is:
 
-1. **Foundation consistency** — the [UniCORE AI](https://github.com/bryanunitek/UniCORE-AI) 12-Level governance stack and the per-level governance MD files. Same input + same governance state → same output. UniCORE.GVB carries the governance state at the substrate layer so every service inherits the consistency posture rather than re-implementing it.
+1. **Foundation consistency** — the [UniCORE AI](https://git.unitek-systems.com/UniCORE/UniCORE-AI) (mirror: [GitHub](https://github.com/bryanunitek/UniCORE-AI)) 12-Level governance stack and the per-level governance MD files. Same input + same governance state → same output. UniCORE.GVB carries the governance state at the substrate layer so every service inherits the consistency posture rather than re-implementing it.
 2. **Vertical consistency** — the substrate is **classified** per industry (`UniCORE.GVB.Law`, `UniCORE.GVB.Banking`, `UniCORE.GVB.Healthcare`, `UniCORE.GVB.Accounting`, …). Each classification adds vertical-specific consistency primitives (jurisdiction-pinning, retention, audit, isolation, federation rules) on top of the foundation guarantee.
 
 And the human-side architecture, split by lifecycle layer:
 
 3. **Production layer — Singular Pairing Principle (1H1C)**: one human, one AI Claw, one workstream produces the certified substrate.
-4. **Operations layer — xH1C with the substrate Claw as consistency-holding agent**: a deployed substrate is run 24/7 by a structured operations cohort under the substrate Claw, not by a 1H1C pair. The certified substrate runbook is the operational artefact the Claw runs operators against; the runbook is not, on its own, the consistency mechanism. **xH1C** = x Humans, 1 Claw — as close to 1H1C as humanly possible at 24/7 substrate scale. In PROD, per-Level qualification + no-Level-overlap apply. In DEV/TEST, the cohort collapses to **1H1C**. The interface between the production layer and the operations layer is the [Reasonable Governance Threshold](https://github.com/bryanunitek/UniVERSE/blob/main/docs/00007-Reasonable-Governance-Threshold-Specification.md).
+4. **Operations layer — xH1C with the substrate Claw as consistency-holding agent**: a deployed substrate is run 24/7 by a structured operations cohort under the substrate Claw, not by a 1H1C pair. The certified substrate runbook is the operational artefact the Claw runs operators against; the runbook is not, on its own, the consistency mechanism. **xH1C** = x Humans, 1 Claw — as close to 1H1C as humanly possible at 24/7 substrate scale. In PROD, per-Level qualification + no-Level-overlap apply. In DEV/TEST, the cohort collapses to **1H1C**. The interface between the production layer and the operations layer is the [Reasonable Governance Threshold](https://git.unitek-systems.com/UniCORE/UniVERSE/src/branch/main/docs/00007-Reasonable-Governance-Threshold-Specification.md) (mirror: [GitHub](https://github.com/bryanunitek/UniVERSE/blob/main/docs/00007-Reasonable-Governance-Threshold-Specification.md)).
 
 Truth without consistency is not deployable in regulated institutional settings. The Inconsistency Problem is the third pillar — sitting alongside the audience pillar (Consumer vs Institutional AI) and the truth pillar (TrueAI Foundation truth contract).
 
@@ -99,7 +99,7 @@ The certified substrate — its governance MD-file set, its 12-Level path, its p
 
 The full 1H1C doctrine — including the production-layer-vs-operations-layer split, Project-Level bond expansion, Patterns 1 and 2, the Generation IT producer qualification, and the recommendation-and-variants policy — lives at the canonical TrueAI document:
 
-[`bryanunitek/TrueAI/docs/10001-Singular-Pairing-Principle.md`](https://github.com/bryanunitek/TrueAI/blob/main/docs/10001-Singular-Pairing-Principle.md)
+[`bryanunitek/TrueAI/docs/10001-Singular-Pairing-Principle.md`](https://git.unitek-systems.com/UniCORE/TrueAI/src/branch/main/docs/10001-Singular-Pairing-Principle.md) (mirror: [GitHub](https://github.com/bryanunitek/TrueAI/blob/main/docs/10001-Singular-Pairing-Principle.md))
 
 ### Operations layer — xH1C with the substrate Claw as consistency-holding agent
 
@@ -113,7 +113,7 @@ In **DEV / TEST**: the cohort collapses to **1H1C** — one human covers all 12 
 
 ### Interface — Reasonable Governance Threshold
 
-The interface between substrate production and substrate operations is the [Reasonable Governance Threshold](https://github.com/bryanunitek/UniVERSE/blob/main/docs/00007-Reasonable-Governance-Threshold-Specification.md). Inside the threshold, the xH1C substrate operations cohort handles the runtime question under the runbook through the substrate Claw (per-Node tweaks, routine Node updates, scheduled maintenance, capacity scaling within envelope). Outside the threshold (substrate-architectural change, governance-MD update, classification reclassification, novel substrate incident class, vendor model change, regulatory inquiry), the question escalates back to the producer-pair (1H1C).
+The interface between substrate production and substrate operations is the [Reasonable Governance Threshold](https://git.unitek-systems.com/UniCORE/UniVERSE/src/branch/main/docs/00007-Reasonable-Governance-Threshold-Specification.md) (mirror: [GitHub](https://github.com/bryanunitek/UniVERSE/blob/main/docs/00007-Reasonable-Governance-Threshold-Specification.md)). Inside the threshold, the xH1C substrate operations cohort handles the runtime question under the runbook through the substrate Claw (per-Node tweaks, routine Node updates, scheduled maintenance, capacity scaling within envelope). Outside the threshold (substrate-architectural change, governance-MD update, classification reclassification, novel substrate incident class, vendor model change, regulatory inquiry), the question escalates back to the producer-pair (1H1C).
 
 ### Recommendation and variants
 
@@ -138,7 +138,7 @@ What UniCORE.GVB makes is the **structural maximum** consistency achievable give
 
 This is the posture a regulator can audit end-to-end — including its honestly-named edge — from the user's input, through the application's decision, through the substrate's data outcome, back to the same answer on the same evidence with the residual surface exposed rather than hidden.
 
-**Canonical edition** of this doctrine lives at [`bryanunitek/TrueAI/THE-INCONSISTENCY-PROBLEM.md`](https://github.com/bryanunitek/TrueAI/blob/main/THE-INCONSISTENCY-PROBLEM.md).
+**Canonical edition** of this doctrine lives at [`bryanunitek/TrueAI/THE-INCONSISTENCY-PROBLEM.md`](https://git.unitek-systems.com/UniCORE/TrueAI/src/branch/main/THE-INCONSISTENCY-PROBLEM.md) (mirror: [GitHub](https://github.com/bryanunitek/TrueAI/blob/main/THE-INCONSISTENCY-PROBLEM.md)).
 
 ## 7. Where this doctrine sits in the corpus
 
@@ -152,12 +152,12 @@ All three pillars hold simultaneously. Removing any one of them breaks the insti
 
 ## 8. Sister documents on neighbouring repositories
 
-- [`UniCORE`](https://github.com/bryanunitek/UniCORE) — implementation reference (on-prem deployment shape).
-- [`UniSaaS.UniCORE`](https://github.com/bryanunitek/UniSaaS.UniCORE) — implementation reference (SaaS deployment shape).
-- [`UniCORE.GVB`](https://github.com/bryanunitek/UniCORE.GVB) — *this repository* (substrate-services layer, on-prem deployment shape).
-- [`UniSaaS.UniCORE.GVB`](https://github.com/bryanunitek/UniSaaS.UniCORE.GVB) — substrate-services layer (SaaS deployment shape).
+- [`UniCORE`](https://git.unitek-systems.com/UniCORE/UniCORE) (mirror: [GitHub](https://github.com/bryanunitek/UniCORE)) — implementation reference (on-prem deployment shape).
+- [`UniSaaS.UniCORE`](https://git.unitek-systems.com/UniCORE/UniSaaS.UniCORE) (mirror: [GitHub](https://github.com/bryanunitek/UniSaaS.UniCORE)) — implementation reference (SaaS deployment shape).
+- [`UniCORE.GVB`](https://git.unitek-systems.com/UniCORE/UniCORE.GVB) (mirror: [GitHub](https://github.com/bryanunitek/UniCORE.GVB)) — *this repository* (substrate-services layer, on-prem deployment shape).
+- [`UniSaaS.UniCORE.GVB`](https://git.unitek-systems.com/UniCORE/UniSaaS.UniCORE.GVB) (mirror: [GitHub](https://github.com/bryanunitek/UniSaaS.UniCORE.GVB)) — substrate-services layer (SaaS deployment shape).
 
-Foundation triad: [`TrueAI`](https://github.com/bryanunitek/TrueAI), [`UniCORE-AI`](https://github.com/bryanunitek/UniCORE-AI), [`UniVERSE`](https://github.com/bryanunitek/UniVERSE).
+Foundation triad: [`TrueAI`](https://git.unitek-systems.com/UniCORE/TrueAI) (mirror: [GitHub](https://github.com/bryanunitek/TrueAI)), [`UniCORE-AI`](https://git.unitek-systems.com/UniCORE/UniCORE-AI) (mirror: [GitHub](https://github.com/bryanunitek/UniCORE-AI)), [`UniVERSE`](https://git.unitek-systems.com/UniCORE/UniVERSE) (mirror: [GitHub](https://github.com/bryanunitek/UniVERSE)).
 
 ## 9. Honest position on current state
 

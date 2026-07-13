@@ -10,7 +10,7 @@ First published: May 2026
 
 This statement defines how the **UniCORE.GVB** name and the **`UniCORE.GVB.<Industry>`** classified names may and may not be used in public, and sets binding rules for the UniCORE.GVB GitHub Discussions space.
 
-The canonical programme-wide statement is published in the UniVERSE repository at [`STATEMENT-ON-CLAIMS.md`](https://github.com/bryanunitek/UniVERSE/blob/main/STATEMENT-ON-CLAIMS.md). The UniCORE-name statement is published at [`UniCORE/STATEMENT-ON-CLAIMS.md`](https://github.com/bryanunitek/UniCORE/blob/main/STATEMENT-ON-CLAIMS.md). This file extends the same rules to the **UniCORE.GVB** name and the open list of industry-classified names.
+The canonical programme-wide statement is published in the UniVERSE repository at [`STATEMENT-ON-CLAIMS.md`](https://git.unitek-systems.com/UniCORE/UniVERSE/src/branch/main/STATEMENT-ON-CLAIMS.md) (mirror: [GitHub](https://github.com/bryanunitek/UniVERSE/blob/main/STATEMENT-ON-CLAIMS.md)). The UniCORE-name statement is published at [`UniCORE/STATEMENT-ON-CLAIMS.md`](https://git.unitek-systems.com/UniCORE/UniCORE/src/branch/main/STATEMENT-ON-CLAIMS.md) (mirror: [GitHub](https://github.com/bryanunitek/UniCORE/blob/main/STATEMENT-ON-CLAIMS.md)). This file extends the same rules to the **UniCORE.GVB** name and the open list of industry-classified names.
 
 ---
 
@@ -18,7 +18,7 @@ The canonical programme-wide statement is published in the UniVERSE repository a
 
 UniCORE.GVB is the **substrate-services layer** of the programme — the Global Virtual Bridge. It provides the production-grade infrastructure (mail, file transfer, DNS, federation, tenancy, topology, FTP, Outlook integration, web disk, calendar/contacts, server profiles, node operations, bandwidth and storage reporting, jurisdictional posture, inter-node bridging) that any Vertical Solution may run on top of.
 
-It is **one codebase** that is **classified for specific industries**, parameterised by the [UniCORE AI 12-Level Governance Model](https://github.com/bryanunitek/UniCORE-AI) for the industry it serves.
+It is **one codebase** that is **classified for specific industries**, parameterised by the [UniCORE AI 12-Level Governance Model](https://git.unitek-systems.com/UniCORE/UniCORE-AI) (mirror: [GitHub](https://github.com/bryanunitek/UniCORE-AI)) for the industry it serves.
 
 UniCORE.GVB is a governance work, not a product. It is not a platform. It is not a SaaS offering. It is not a tool category. It is not a brand for sale.
 

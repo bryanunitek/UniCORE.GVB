@@ -109,17 +109,17 @@ The gift surface is uniform. Anyone in the world may take published UniCORE.GVB 
 
 1. **Build** — `UniCORE.GVB-Claw` is built privately to the level the Foundation invariants and the substrate-services scope require.
 2. **Self-assessment** — the Generation IT producer pair self-assesses against the Nine Invariants and the 12-Level reference architecture, including the parameterisation for each in-scope industry classification.
-3. **Solution Review** — independent Solution Review by a [Certified Expert](https://github.com/bryanunitek/UniVERSE/blob/main/CERTIFIED-EXPERTS.md).
+3. **Solution Review** — independent Solution Review by a [Certified Expert](https://git.unitek-systems.com/UniCORE/UniVERSE/src/branch/main/CERTIFIED-EXPERTS.md) (mirror: [GitHub](https://github.com/bryanunitek/UniVERSE/blob/main/CERTIFIED-EXPERTS.md)).
 4. **Certification recorded** — the Solution Review outcome is recorded; the certification claim becomes valid.
 5. **Public publication** — the substrate-services source is extracted and published across this repository AND the industry-classified sibling repositories simultaneously.
 
-The exact procedural detail is governed by the canonical material in [`UniVERSE/docs/10002-Certification-Before-Layered-Governance.md`](https://github.com/bryanunitek/UniVERSE/blob/main/docs/10002-Certification-Before-Layered-Governance.md) and [`UniVERSE/docs/00059-Solution-Review.md`](https://github.com/bryanunitek/UniVERSE/blob/main/docs/00059-Solution-Review.md).
+The exact procedural detail is governed by the canonical material in [`UniVERSE/docs/10002-Certification-Before-Layered-Governance.md`](https://git.unitek-systems.com/UniCORE/UniVERSE/src/branch/main/docs/10002-Certification-Before-Layered-Governance.md) (mirror: [GitHub](https://github.com/bryanunitek/UniVERSE/blob/main/docs/10002-Certification-Before-Layered-Governance.md)) and [`UniVERSE/docs/00059-Solution-Review.md`](https://git.unitek-systems.com/UniCORE/UniVERSE/src/branch/main/docs/00059-Solution-Review.md) (mirror: [GitHub](https://github.com/bryanunitek/UniVERSE/blob/main/docs/00059-Solution-Review.md)).
 
 ---
 
 ## Why DRAFT v0.01 today
 
-The programme as a whole is in DRAFT v0.01. Versioning across the public repositories does not turn on until the first GitHub Discussion is opened in any of the public programme repositories — see [`UniVERSE/HORIZON.md`](https://github.com/bryanunitek/UniVERSE/blob/main/HORIZON.md) for the canonical statement.
+The programme as a whole is in DRAFT v0.01. Versioning across the public repositories does not turn on until the first GitHub Discussion is opened in any of the public programme repositories — see [`UniVERSE/HORIZON.md`](https://git.unitek-systems.com/UniCORE/UniVERSE/src/branch/main/HORIZON.md) (mirror: [GitHub](https://github.com/bryanunitek/UniVERSE/blob/main/HORIZON.md)) for the canonical statement.
 
 This repository inherits that posture. The `Version: 1.0` line is a placeholder.
 
@@ -131,14 +131,14 @@ The same horizon that applies to the wider programme applies here. UniCORE.GVB s
 
 One chapter of that horizon is the transition to post-quantum cryptography, sequenced against a now-public, industry-shared clock (NIST FIPS 203/204/205; begin before 2030, disallow classical public-key by 2035). See [`POST-QUANTUM.md`](POST-QUANTUM.md) for the threat, current honest status, priority order (long-lived record signatures first), roadmap, and timeline.
 
-For the canonical horizon statement, see [`UniVERSE/HORIZON.md`](https://github.com/bryanunitek/UniVERSE/blob/main/HORIZON.md).
+For the canonical horizon statement, see [`UniVERSE/HORIZON.md`](https://git.unitek-systems.com/UniCORE/UniVERSE/src/branch/main/HORIZON.md) (mirror: [GitHub](https://github.com/bryanunitek/UniVERSE/blob/main/HORIZON.md)).
 
 ---
 
 ## What readers can do today
 
 - **Cite the architecture** — the position of UniCORE.GVB as the substrate-services layer, the open industry list, and the certification trigger, are public and citable now.
-- **Read the canonical material** — the Foundation triad ([UniVERSE](https://github.com/bryanunitek/UniVERSE), [TrueAI](https://github.com/bryanunitek/TrueAI), [UniCORE-AI](https://github.com/bryanunitek/UniCORE-AI)) is fully published.
+- **Read the canonical material** — the Foundation triad ([UniVERSE](https://git.unitek-systems.com/UniCORE/UniVERSE) (mirror: [GitHub](https://github.com/bryanunitek/UniVERSE)), [TrueAI](https://git.unitek-systems.com/UniCORE/TrueAI) (mirror: [GitHub](https://github.com/bryanunitek/TrueAI)), [UniCORE-AI](https://git.unitek-systems.com/UniCORE/UniCORE-AI) (mirror: [GitHub](https://github.com/bryanunitek/UniCORE-AI))) is fully published.
 - **Build their own substrate-services** under CC BY 4.0 — the architecture is open. Independent producers building Foundation-aligned substrate-services for verticals not yet covered by the official industry list are exactly what the gift principle exists to enable.
 - **Discuss** — open a thread on this repository's [Discussions tab](https://github.com/bryanunitek/UniCORE.GVB/discussions) when adoption, architectural critique, industry-classification proposals, or translation work has begun.
 
@@ -170,8 +170,8 @@ The substrate-services scope recorded in [README.md](README.md) is the **current
 
 Since the v0.01 publication of this ROADMAP, the **SaaS-deployment-shape sister** of UniCORE.GVB has been published:
 
-- [`UniSaaS.UniCORE.GVB`](https://github.com/bryanunitek/UniSaaS.UniCORE.GVB) — the same substrate-services layer, surfaced for the multi-tenant SaaS topology rather than the on-premise topology.
-- [`UniSaaS.UniCORE`](https://github.com/bryanunitek/UniSaaS.UniCORE) — the SaaS-deployment-shape sister of UniCORE (the implementation reference layer).
+- [`UniSaaS.UniCORE.GVB`](https://git.unitek-systems.com/UniCORE/UniSaaS.UniCORE.GVB) (mirror: [GitHub](https://github.com/bryanunitek/UniSaaS.UniCORE.GVB)) — the same substrate-services layer, surfaced for the multi-tenant SaaS topology rather than the on-premise topology.
+- [`UniSaaS.UniCORE`](https://git.unitek-systems.com/UniCORE/UniSaaS.UniCORE) (mirror: [GitHub](https://github.com/bryanunitek/UniSaaS.UniCORE)) — the SaaS-deployment-shape sister of UniCORE (the implementation reference layer).
 
 The deployment shape is the only thing that distinguishes UniSaaS.UniCORE.GVB from UniCORE.GVB. The governance is the same. The Foundation invariants are the same. The certification gate is the same. Three SaaS operator positions exist: Hosted SaaS, Private SaaS, and Self-hosted — the gift surface is uniform across all three.
 

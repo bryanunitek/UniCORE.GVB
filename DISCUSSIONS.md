@@ -6,9 +6,9 @@ The UniCORE.GVB Discussions tab follows the same rules as the foundation triad's
 
 ## Canonical Discussions rules
 
-- [`UniVERSE/DISCUSSIONS.md`](https://github.com/bryanunitek/UniVERSE/blob/main/DISCUSSIONS.md) — the canonical home of the rules.
-- [`TrueAI/DISCUSSIONS.md`](https://github.com/bryanunitek/TrueAI/blob/main/DISCUSSIONS.md)
-- [`UniCORE-AI/DISCUSSIONS.md`](https://github.com/bryanunitek/UniCORE-AI/blob/main/DISCUSSIONS.md)
+- [`UniVERSE/DISCUSSIONS.md`](https://git.unitek-systems.com/UniCORE/UniVERSE/src/branch/main/DISCUSSIONS.md) (mirror: [GitHub](https://github.com/bryanunitek/UniVERSE/blob/main/DISCUSSIONS.md)) — the canonical home of the rules.
+- [`TrueAI/DISCUSSIONS.md`](https://git.unitek-systems.com/UniCORE/TrueAI/src/branch/main/DISCUSSIONS.md) (mirror: [GitHub](https://github.com/bryanunitek/TrueAI/blob/main/DISCUSSIONS.md))
+- [`UniCORE-AI/DISCUSSIONS.md`](https://git.unitek-systems.com/UniCORE/UniCORE-AI/src/branch/main/DISCUSSIONS.md) (mirror: [GitHub](https://github.com/bryanunitek/UniCORE-AI/blob/main/DISCUSSIONS.md))
 
 The three are byte-identical for the structural rules.
 
